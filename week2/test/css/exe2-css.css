@@ -1,0 +1,22 @@
+body {
+    background-color: #F1F7D4;
+}
+
+h1 {
+    color: #4A4466;
+}
+
+h2 {
+    color: #6EADBC;
+    border: 10px dotted #6EADBC;
+    border-width: 5px;
+    padding: 10px;
+}
+
+p {
+    color: #9FCBAD;
+}
+
+p a {
+    color: #9FCBAD;
+}
