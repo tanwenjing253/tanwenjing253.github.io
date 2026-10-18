@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Isometra&family=Noto+Serif+SC:wght@200..900&family=Playwrite+CA+Guides&display=swap');
+
+body {
+    background-color: #f1ffaa;
+    font-style: italic;
+    background-image: url(../images/random.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Bitcount Ink", system-ui;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Isometra", system-ui;
+    font-weight: 100;
+    line-height: 2.5;
+}
+
+h3 {
+    font-family: "Playwrite CA Guides", system-ui;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Noto Serif SC", system-ui;
+}
+
+p {
+    margin: 0;
+    border: 1px solid #d21111;
+    border-width: 5px;
+    padding: 10px;
+    border-radius: 10px 40px 30px 40px;
+    box-shadow: 0px 15px 4px #888888;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f20303;
+    font-size: 20px;
+}

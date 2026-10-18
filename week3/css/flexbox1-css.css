@@ -1,0 +1,27 @@
+body {
+    background-color: #daf162;
+}
+
+.borders {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin: auto;
+    gap: 10px;
+}
+
+.bg-image {
+    background-image: url(../images/buildings.jpg);
+    aspect-ratio: 1.45/ 1;
+    min-height: 150px;
+    flex: 2;
+    background-position: center;
+    flex-direction: row;
+    background-size: cover;
+    display: flex;
+}
+
+.div.residential {
+    font-size: 10px;
+}
