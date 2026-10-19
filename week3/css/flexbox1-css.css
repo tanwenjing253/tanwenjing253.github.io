@@ -17,7 +17,9 @@ body {
     border-radius: 14px;
 }
 
-.resi-image {
+.resi-image,
+.come-image,
+.indust-image {
     background-image: url(../images/buildings.jpg);
     aspect-ratio: 1/ 1;
     min-height: 200px;
@@ -27,23 +29,14 @@ body {
     display: flex;
 }
 
+.resi-image {
+    background-image: url(../images/buildings.jpg);
+}
+
 .come-image {
-    background-image: url(../images/commercial.jpg);
-    aspect-ratio: 1/ 1;
-    min-height: 200px;
-    flex: 2;
-    background-position: center;
-    flex-direction: row;
-    background-size: cover;
-    display: flex;
+    background-image: url(../images/commercial.jpg)
 }
 
 .indust-image {
     background-image: url(../images/infrastructure.jpg);
-    aspect-ratio: 1/ 1;
-    min-height: 200px;
-    flex: 2;
-    background-position: center;
-    background-size: cover;
-    display: flex;
 }
