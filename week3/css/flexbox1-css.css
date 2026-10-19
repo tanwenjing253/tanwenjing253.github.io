@@ -1,5 +1,6 @@
 body {
     background-color: #daf162;
+    margin: 25px 14px 11px;
 }
 
 .borders {
@@ -7,21 +8,44 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 500px;
-    margin: auto;
+    margin: 8px auto;
     gap: 10px;
 }
 
-.bg-image {
+.resi-image {
     background-image: url(../images/buildings.jpg);
-    aspect-ratio: 1.45/ 1;
-    min-height: 150px;
+    aspect-ratio: 1/ 1;
+    min-height: 200px;
     flex: 2;
     background-position: center;
-    flex-direction: row;
+    flex-direction: column;
+    background-size: cover;
+    display: flex;
+}
+
+.come-image {
+    background-image: url(../images/commercial.jpg);
+    aspect-ratio: 1/ 1;
+    min-height: 200px;
+    flex: 2;
+    background-position: center;
+    flex-direction: column;
+    background-size: cover;
+    display: flex;
+}
+
+.indust-image {
+    background-image: url(../images/infrastructure.jpg);
+    aspect-ratio: 1/ 1;
+    min-height: 200px;
+    flex: 2;
+    background-position: center;
+    flex-direction: column;
     background-size: cover;
     display: flex;
 }
 
 .div.residential {
-    font-size: 10px;
+    display: flex;
+    flex-direction: column;
 }
