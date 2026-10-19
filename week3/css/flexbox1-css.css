@@ -1,15 +1,20 @@
 body {
     background-color: #daf162;
-    margin: 25px 14px 11px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    max-width: 1050px;
 }
 
 .borders {
-    background-color: white;
     display: flex;
-    flex-direction: row;
-    max-width: 500px;
+    flex-direction: column;
+    max-width: 32%;
     margin: 8px auto;
-    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 14px;
 }
 
 .resi-image {
@@ -18,7 +23,6 @@ body {
     min-height: 200px;
     flex: 2;
     background-position: center;
-    flex-direction: column;
     background-size: cover;
     display: flex;
 }
@@ -29,7 +33,7 @@ body {
     min-height: 200px;
     flex: 2;
     background-position: center;
-    flex-direction: column;
+    flex-direction: row;
     background-size: cover;
     display: flex;
 }
@@ -40,12 +44,6 @@ body {
     min-height: 200px;
     flex: 2;
     background-position: center;
-    flex-direction: column;
     background-size: cover;
     display: flex;
-}
-
-.div.residential {
-    display: flex;
-    flex-direction: column;
 }
