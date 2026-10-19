@@ -4,7 +4,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     max-width: 1700px;
     margin: 24px auto;
-    padding: 0 85px;
+    padding: 85px;
     background-color: white;
 }
 
@@ -13,6 +13,7 @@ body {
     flex-direction: row;
     gap: 24px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .positivus-logo {
@@ -36,6 +37,7 @@ body {
     background-color: white;
     border: 1px solid #191a23;
     border-radius: 14px;
+    margin-left: 20px;
 }
 
 .caption {
@@ -43,6 +45,7 @@ body {
     flex-direction: row;
     gap: 50px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .content {
@@ -65,16 +68,18 @@ body {
 .consult-button {
     font-size: 20px;
     color: white;
-    padding: 20px 30px;
+    padding: 20px 32px;
     background-color: #191a23;
     border: 1px solid #191a23;
     border-radius: 14px;
+    margin-top: 10px;
 }
 
 .partner-logos {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .partner-logos img {
