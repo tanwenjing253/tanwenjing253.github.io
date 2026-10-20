@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    max-width: 1700px;
+    margin: 24px auto;
+    padding: 85px;
+    background-color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.positivus-logo {
+    max-width: 210px;
+    margin-right: auto;
+}
+
+.nav-links {
+    font-weight: lighter;
+    font-size: normal;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+
+.mobile-menu {
+    width: 100%;
+    display: none;
+}
+
+.quote-button {
+    font-size: 20px;
+    padding: 18px 35px;
+    background-color: white;
+    border: 1px solid #191a23;
+    border-radius: 14px;
+    margin-left: 10px;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.consult-button {
+    font-size: 20px;
+    color: white;
+    padding: 20px 32px;
+    background-color: #191a23;
+    border: 1px solid #191a23;
+    border-radius: 14px;
+    margin-top: 30px;
+}
+
+.partner-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.partner-logos img {
+    max-width: 200px;
+}
+
+/*tablet style*/
+@media screen and (max-width: 1300px) {
+
+    .nav-links {
+        font-size: 10px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .quote-button {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+
+    .content h1 {
+        font-size: 30px
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .consult-button {
+        font-size: 15px;
+        padding: 15px 22px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .nav-links {
+        font-size: 7px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .quote-button {
+        font-size: 10px;
+        padding: 10px 25px;
+    }
+
+    .content h1 {
+        font-size: 30px
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+
+    .consult-button {
+        font-size: 10px;
+        padding: 15px 22px;
+    }
+
+    .positivus-logo {
+        max-width: 150px;
+    }
+
+    .partner-logos img {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+
+    .nav-links {
+        font-size: 6px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .quote-button {
+        font-size: 8px;
+        padding: 6px 15px;
+    }
+
+    .content h1 {
+        font-size: 20px
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+
+    .consult-button {
+        font-size: 10px;
+        padding: 15px 22px;
+    }
+
+    .positivus-logo {
+        max-width: 100px;
+    }
+
+    .partner-logos img {
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-width: 716px) {
+
+    .nav-links {
+        font-size: 6px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .quote-button {
+        font-size: 8px;
+        padding: 6px 15px;
+    }
+
+    .content h1 {
+        font-size: 20px
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+
+    .consult-button {
+        font-size: 10px;
+        padding: 15px 22px;
+    }
+
+    .positivus-logo {
+        max-width: 70px;
+    }
+
+    .partner-logos img {
+        max-width: 50px;
+    }
+}
+
+/* mobile style*/
+@media screen and (max-width: 600px) {
+
+    .nav-links {
+        display: none
+    }
+
+    .mobile-menu {
+        width: 5%;
+        display: block;
+    }
+
+    .caption {
+        flex-direction: column-reverse;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .consult-button {
+        font-size: 20px;
+    }
+}

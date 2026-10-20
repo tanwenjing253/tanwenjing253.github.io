@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    font-family: "Oxygen", sans-serif;
+    background-color: cornflowerblue;
+    line-height: 1.5;
+    background-image: url('../images/flexboxbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    margin: auto;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.box {
+    padding: 10px;
+    flex: 1;
+
+}
+
+.residential,
+.commercial,
+.infra {
+    background-color: aliceblue;
+    flex: 2;
+    border-radius: 10px;
+}
+
+
+.residentbg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+.commbg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+.infrabg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+h2,
+p {
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+.residentbg::before,
+.commbg::before,
+.infrabg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.residentbg::before {
+    background-image: url('../images/buildings.jpg');
+}
+
+.commbg::before {
+    background-image: url('../images/commercial.jpg');
+}
+
+.infrabg::before {
+    background-image: url('../images/infrastructure.jpg');
+}
+
+.residentbg:hover::before,
+.commbg:hover::before,
+.infrabg:hover::before {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 10px;
+    }
+}

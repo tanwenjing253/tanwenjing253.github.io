@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    display: block;
+}
+
+.disappear {
+    display: block;
+}
+
+/* tablet styles */
+@media screen and (max-width: 800px) {
+    body {
+        background-color: rgb(106, 128, 218);
+    }
+
+    p {
+        color: blue
+    }
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    p {
+        color: blue
+    }
+}
