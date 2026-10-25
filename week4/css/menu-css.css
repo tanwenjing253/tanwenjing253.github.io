@@ -1,18 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-
+/* Reset default margins and paddings */
 body {
-    font-family: "Oxygen", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Main Navigation Container */
 .navigation {
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
     align-items: center;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .elementra {
-    max-width: 210px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 300px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    margin-left: 100px;
     margin-right: auto;
+}
+
+/* Navigation Text Styling */
+.nav-links h2 {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links h2:hover {
+    color: #F05A28;
+    /* Elementra Orange */
+}
+
+.phonecall,
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.phonecall img {
+    height: 30px;
+    width: auto;
+    margin-right: 8px;
+}
+
+.number h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    /* Space between number and Contact button */
+}
+
+/* Contact Button Styling */
+.contact-btn {
+    background-color: #F05A28;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #923010;
+    /* Darker orange on hover */
+}
+
+/* Mobile Menu Icon */
+.mobile-menu {
+    display: none;
+    /* Hidden on desktop */
+    padding: 20px;
 }
