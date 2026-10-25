@@ -2,8 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1700px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Main Navigation Container */
@@ -14,7 +14,6 @@ body {
     padding: 15px 40px;
 }
 
-/* Logo Styling */
 .logo {
     display: flex;
     align-items: center;
@@ -33,7 +32,6 @@ body {
     margin-right: auto;
 }
 
-/* Navigation Text Styling */
 .nav-links h2 {
     font-size: 15px;
     font-weight: 600;
@@ -44,14 +42,8 @@ body {
 /* Hover effect for links */
 .nav-links h2:hover {
     color: #F05A28;
-    /* Elementra Orange */
 }
 
-.phonecall,
-.number {
-    display: flex;
-    align-items: center;
-}
 
 .phonecall img {
     height: 30px;
@@ -63,7 +55,6 @@ body {
     font-size: 16px;
     font-weight: 700;
     margin-right: 30px;
-    /* Space between number and Contact button */
 }
 
 /* Contact Button Styling */
@@ -81,12 +72,49 @@ body {
 
 .contact-btn:hover {
     background-color: #923010;
-    /* Darker orange on hover */
 }
 
 /* Mobile Menu Icon */
-.mobile-menu {
+.menu {
     display: none;
-    /* Hidden on desktop */
     padding: 20px;
+}
+
+/*tablet style*/
+@media screen and (max-width: 1500px) {
+    .elementra {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .elementra {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .home,
+    .service,
+    .work,
+    .project,
+    .contact,
+    .contact-btn {
+        display: none;
+    }
+
+    .menu {
+        width: 5%;
+        display: block;
+    }
+}
+
+/*mobile style*/
+@media screen and (max-width: 640px) {
+
+    .phonecall,
+    .number {
+        display: none;
+    }
 }
