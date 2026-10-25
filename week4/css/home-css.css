@@ -90,6 +90,38 @@ body {
     max-width: 200px;
 }
 
+.services-section {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.services-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.section-tag {
+    background-color: #baff39;
+    padding: 0 10px;
+    border-radius: 7px;
+    font-size: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #191a23;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.services-header p {
+    font-size: 18px;
+    max-width: 580px;
+    line-height: 1.4;
+    margin: 0;
+    padding-top: 8px;
+
+}
 
 /*tablet style*/
 @media screen and (max-width: 1300px) {
