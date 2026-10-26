@@ -337,7 +337,7 @@ body {
     }
 
     .learn-more {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .learn-more img {
@@ -391,6 +391,20 @@ body {
 
     .partner-logos img {
         max-width: 100px;
+    }
+
+    .cta-content h2 {
+        font-size: 20px;
+    }
+
+    .cta-content p {
+        font-size: 10px;
+    }
+
+    .cta-content .consult-button {
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 10px;
     }
 }
 
@@ -552,6 +566,21 @@ body {
 
     .learn-more {
         margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cta-content p {
+        font-size: 12px;
+    }
+
+    .cta-content .consult-button {
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 15px;
     }
 
 }
