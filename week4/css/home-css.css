@@ -189,7 +189,6 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
-    cursor: pointer;
     margin-top: 40px;
 }
 
@@ -219,6 +218,57 @@ body {
 .web img,
 .windows img {
     max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cta-section {
+    background-color: #f3f3f3;
+    border-radius: 45px;
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.cta-content {
+    max-width: 500px;
+    z-index: 2;
+}
+
+.cta-content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    color: #191a23;
+}
+
+.cta-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #191a23;
+}
+
+.cta-content .consult-button {
+    padding: 20px 35px;
+    background-color: #191a23;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+
+.cta-illust {
+    justify-content: right;
+    margin-left: 0px;
+    max-width: 400px;
+}
+
+.cta-illust img {
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
