@@ -63,6 +63,8 @@ body {
 
 .bio {
     margin-top: 50px;
+    align-content: center;
+    justify-content: center;
 }
 
 .exercise-list-container {
@@ -89,6 +91,7 @@ body {
     border-radius: 12px;
     padding: 25px 20px;
     text-align: center;
+    margin-right: 30px;
 }
 
 .week-title {
@@ -100,6 +103,10 @@ body {
     align-items: center;
     gap: 8px;
     color: #E8E085;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 
@@ -151,4 +158,81 @@ body {
     font-size: 12px;
     opacity: 0.8;
     margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .exercise-box {
+        padding: 20px 15px;
+    }
+
+    .bio {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+
+    .exercise-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .exercise-box {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profile-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .bio {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 0 10px;
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .header {
+        padding: 15px 10px;
+    }
+
+    .week-title {
+        font-size: 0.9rem;
+    }
+
+    .exercise-box {
+        max-width: 465px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .exercise-box li {
+        font-size: 14px;
+    }
 }
