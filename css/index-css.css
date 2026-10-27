@@ -74,7 +74,6 @@ body {
 
 .exercise-list-container {
     justify-content: center;
-    width: 100%;
     max-width: 1645px;
     margin-top: 30px;
     display: flex;
@@ -86,7 +85,6 @@ body {
 .exercise-row {
     display: flex;
     gap: 20px;
-    width: 100%;
     justify-content: center;
 }
 
@@ -96,7 +94,6 @@ body {
     border-radius: 12px;
     padding: 25px 20px;
     text-align: center;
-    margin-right: 30px;
 }
 
 .week-title {
@@ -136,7 +133,6 @@ body {
     color: white;
     text-align: center;
     padding: 25px 20px;
-    width: 100%;
     margin-top: 50px;
 }
 
@@ -194,8 +190,6 @@ body {
     }
 
     .exercise-box {
-        max-width: 600px;
-        width: 100%;
         padding: 20px;
     }
 
@@ -232,8 +226,6 @@ body {
     }
 
     .exercise-box {
-        max-width: 465px;
-        width: 100%;
         padding: 20px;
     }
 

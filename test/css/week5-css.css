@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#container>div {
+    width: calc(100% / 3 - calc(30px / 4));
+    /* 4 boxes per row, and it contains 3 gaps space (total 10+10+10=30px), so 30px/4 = 7.5px per div */
+    padding: 30px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+@media (max-width: 1024px) {
+    #container div {
+        width: calc(100% / 4 - calc(30px / 4));
+        /* 2 boxes per row, 1 gap per row (10px), so 5px = 1/2 of 10px */
+    }
+}
+
+/* mobile */
+@media (max-width: 648px) {
+    #container div {
+        width: calc(100% / 2 - calc(10px /2));
+    }
+}

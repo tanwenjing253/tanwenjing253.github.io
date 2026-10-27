@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #2b8df5;
+    --text: #222;
+    --bg-light: #f9f9f9;
+    --radius: 8px;
+}
+
+/* === GLOBAL RESET & TYPOGRAPHY === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text);
+    line-height: 1.6;
+}
