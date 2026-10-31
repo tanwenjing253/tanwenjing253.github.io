@@ -1,43 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 body {
-    font-family: sans-serif;
-    background-color: #f6f5ef;
-    margin: 8px;
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5;
+}
+
+.container {
     display: flex;
     flex-direction: row;
-    gap: 22px;
-    max-width: 1050px;
+    max-width: 1024px;
+    margin: auto;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 60px;
 }
 
-.borders {
-    display: flex;
-    flex-direction: column;
-    max-width: 32%;
-    margin: 8px auto;
-    padding: 15px;
-    background-color: white;
-    border-radius: 14px;
+.box {
+    padding: 10px;
+    flex: 1;
+
 }
 
-.resi-image,
-.come-image,
-.indust-image {
-    background-image: url(../images/buildings.jpg);
-    aspect-ratio: 1/ 1;
-    min-height: 200px;
+.residential,
+.commercial,
+.infra {
+    background-color: rgb(229, 240, 249);
     flex: 2;
-    background-position: center;
+    border-radius: 10px;
+}
+
+
+.residentbg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+.commbg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+.infrabg {
+    min-height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin: 10px 10px;
+}
+
+h2,
+p {
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+.residentbg::before,
+.commbg::before,
+.infrabg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-size: cover;
-    display: flex;
+    background-position: center;
+    transition: transform 0.3s ease;
 }
 
-.resi-image {
-    background-image: url(../images/buildings.jpg);
+.residentbg::before {
+    background-image: url('../images/buildings.jpg');
 }
 
-.come-image {
-    background-image: url(../images/commercial.jpg)
+.commbg::before {
+    background-image: url('../images/commercial.jpg');
 }
 
-.indust-image {
-    background-image: url(../images/infrastructure.jpg);
+.infrabg::before {
+    background-image: url('../images/infrastructure.jpg');
+}
+
+.residentbg:hover::before,
+.commbg:hover::before,
+.infrabg:hover::before {
+    transform: scale(1.05);
 }
