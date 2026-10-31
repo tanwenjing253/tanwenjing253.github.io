@@ -18,3 +18,26 @@ body {
     color: var(--text);
     line-height: 1.6;
 }
+
+/* === LAYOUT COMPONENTS === */
+.header,
+.footer {
+    padding: 20px;
+    background: var(--bg-light);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* === REUSABLE COMPONENTS === */
+.btn {
+    color: var(--text);
+    background: var(--primary);
+    padding: 10px 16px;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
