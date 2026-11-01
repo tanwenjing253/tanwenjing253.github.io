@@ -32,6 +32,58 @@ body {
     justify-content: center;
 }
 
+/* === NAVIGATION BAR === */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    /* Converted from 1.2rem */
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo-icon {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
 /* === REUSABLE COMPONENTS === */
 .btn {
     color: var(--text);
@@ -40,4 +92,25 @@ body {
     border: none;
     border-radius: var(--radius);
     cursor: pointer;
+}
+
+/* Outline Button styling */
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
 }
