@@ -178,3 +178,48 @@
     margin-bottom: 30px;
     color: #111;
 }
+
+.atmosphere {
+    position: relative;
+    height: 700px;
+    background-image: url('../images/dining_table.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.atmosphere::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 40%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.atmosphere-content {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    color: #fff;
+}
+
+.atmosphere-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.atmosphere-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ddd;
+}
