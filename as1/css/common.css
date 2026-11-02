@@ -45,6 +45,11 @@ body {
     z-index: 10;
 }
 
+.menu {
+    display: none;
+    /* Hide the menu icon by default */
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -188,4 +193,26 @@ body {
     height: 22px;
     object-fit: contain;
     transition: filter 0.3s ease;
+}
+
+@media (max-width: 992px) {
+
+    /* Turn navbar into a solid black bar */
+    .navbar {
+        background-color: #000;
+        /* Solid black background */
+        position: relative;
+        /* Pushes hero content down */
+        padding: 20px 8%;
+    }
+
+    /* Hide text links */
+    .nav-links {
+        display: none;
+    }
+
+    /* Show hamburger icon */
+    .menu {
+        display: flex;
+    }
 }
