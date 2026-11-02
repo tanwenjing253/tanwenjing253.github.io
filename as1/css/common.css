@@ -114,3 +114,78 @@ body {
     color: #fff;
     border-color: #111;
 }
+
+/* === FOOTER SECTION === */
+.footer {
+    position: relative;
+    padding: 120px 8%;
+    text-align: center;
+    background-image: url('../images/envi_foot.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Dark overlay to make the text readable */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Adjust the logo to center properly in the footer */
+.footer-logo {
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.footer-desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual Circular Icon */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Target the image inside the icon */
+.social-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
