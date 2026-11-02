@@ -195,6 +195,12 @@ body {
     transition: filter 0.3s ease;
 }
 
+@media (max-width: 1240px) {
+    .nav-links {
+        font-size: 11px;
+    }
+}
+
 @media (max-width: 992px) {
 
     /* Turn navbar into a solid black bar */

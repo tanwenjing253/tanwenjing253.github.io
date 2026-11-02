@@ -213,6 +213,21 @@
     color: #ddd;
 }
 
+@media (max-width: 1240px) {
+
+    .hero-desc {
+        font-size: 10px;
+    }
+
+    .hero-title {
+        font-size: 70px;
+    }
+
+    .hero-subtitle {
+        font-size: 9px;
+    }
+}
+
 @media (max-width: 992px) {
 
     .hero {
@@ -265,9 +280,9 @@
 
     .chef-specials-title {
         order: 2;
-        margin-top: 40px;
         margin-bottom: 20px;
         text-align: center;
+        font-size: 30px;
     }
 
     .popular-section>.btn-outline {
@@ -278,7 +293,6 @@
     .dessert {
         order: 4;
         width: 100%;
-        margin-bottom: 60px;
     }
 
     .seasonal {
@@ -298,10 +312,101 @@
 
     .dessert,
     .seasonal {
+        font-family: 'bebas neue', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
+    .dessert h4,
+    .seasonal h4 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-desc {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* 2. Menu Section */
+    .popular-section {
+        padding: 60px 0;
+    }
+
+    .section-subtitle {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .section-desc {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .chef-specials-title {
+        font-size: 24px;
+    }
+
+    .chef-special img,
+    .dessert img,
+    .seasonal img {
+        aspect-ratio: 3 / 2;
+    }
+
+    .dessert h4,
+    .seasonal h4 {
+        font-size: 24px;
+    }
+
+
+    /* 3. Atmosphere Section */
+    .atmosphere {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        padding: 0;
+        background-image: none;
+        background-color: #000;
+    }
+
+    .atmosphere::before {
+        content: '';
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        background-image: url('../images/dining_table.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    /* Style the text block underneath */
+    .atmosphere-content {
+        position: relative;
+        z-index: 2;
+        padding: 40px 8% 60px 8%;
+        text-align: center;
+        background-color: #000;
+    }
+
+    .atmosphere-title {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .atmosphere-desc {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #ddd;
+        margin: 0 auto;
+    }
 }
