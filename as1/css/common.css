@@ -47,7 +47,6 @@ body {
 
 .menu {
     display: none;
-    /* Hide the menu icon by default */
 }
 
 .logo-container {
@@ -57,7 +56,6 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 19px;
-    /* Converted from 1.2rem */
     letter-spacing: 1px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -99,7 +97,6 @@ body {
     cursor: pointer;
 }
 
-/* Outline Button styling */
 .btn-outline {
     display: inline-block;
     padding: 12px 30px;
@@ -131,7 +128,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* Dark overlay to make the text readable */
 .footer::before {
     content: '';
     position: absolute;
@@ -154,7 +150,6 @@ body {
     color: #fff;
 }
 
-/* Adjust the logo to center properly in the footer */
 .footer-logo {
     justify-content: center;
     margin-bottom: 25px;
@@ -168,13 +163,11 @@ body {
     margin-bottom: 40px;
 }
 
-/* Social Icons Container */
 .social-icons {
     display: flex;
     gap: 15px;
 }
 
-/* Individual Circular Icon */
 .social-icon {
     width: 50px;
     height: 50px;
@@ -187,7 +180,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Target the image inside the icon */
 .social-icon img {
     width: 22px;
     height: 22px;
@@ -203,21 +195,16 @@ body {
 
 @media (max-width: 992px) {
 
-    /* Turn navbar into a solid black bar */
     .navbar {
         background-color: #000;
-        /* Solid black background */
         position: relative;
-        /* Pushes hero content down */
         padding: 20px 8%;
     }
 
-    /* Hide text links */
     .nav-links {
         display: none;
     }
 
-    /* Show hamburger icon */
     .menu {
         display: flex;
     }
