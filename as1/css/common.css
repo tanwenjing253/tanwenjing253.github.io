@@ -33,16 +33,21 @@ body {
     justify-content: center;
 }
 
+.logo-container {
+    margin-left: 30px;
+}
+
 /* === NAVIGATION BAR === */
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 40px 8%;
+    padding: 40px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-links {
+    margin-left: 500px;
 }
 
 .menu {
@@ -98,13 +103,15 @@ body {
 }
 
 .btn-outline {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid var(--primary);
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 10px 20px;
     font-size: 12px;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--text);
+    border: 1px solid var(--primary);
+    color: #333;
     text-decoration: none;
     transition: all 0.3s ease;
     background: transparent;
@@ -119,27 +126,18 @@ body {
 
 /* === FOOTER SECTION === */
 .footer {
-    position: relative;
     padding: 120px 8%;
     text-align: center;
-    background-image: url('../images/envi_foot.jpg');
+    background-color: #000;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('../images/envi_foot.jpg');
     background-size: cover;
     background-position: center;
     font-family: 'Work Sans', sans-serif;
 }
 
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-}
-
 .footer-content {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,9 +180,17 @@ body {
     height: 22px;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1414px) {
     .nav-links {
         font-size: 11px;
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .nav-links {
+        font-size: 8px;
+        margin-left: 200px;
     }
 }
 
@@ -202,5 +208,10 @@ body {
 
     .menu {
         display: flex;
+    }
+
+    .logo-container.footer-logo {
+        margin-left: 0;
+        margin-right: 10px;
     }
 }

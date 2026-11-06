@@ -1,4 +1,6 @@
 .hero {
+    display: flex;
+    flex-direction: column;
     height: 900px;
     background-color: #000;
     background-image: url('../images/envi_head.jpg');
@@ -7,18 +9,17 @@
     background-position: right center;
     display: flex;
     align-items: center;
-    padding: 0 8%;
+    padding: 20px;
     font-family: 'Work Sans', sans-serif;
 }
 
 .hero-content {
     width: 50%;
-    max-width: 550px;
     color: #fff;
-    margin-top: 0;
-    padding: 0;
+    margin-top: 100px;
     box-sizing: border-box;
     background-color: transparent;
+    margin-right: 550px;
 }
 
 
@@ -120,20 +121,6 @@
     color: #111;
 }
 
-.btn-outline {
-    font-family: 'Work Sans', sans-serif;
-    display: block;
-    width: 120px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #333;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    background: transparent;
-    cursor: pointer;
-}
 
 .chef-specials-btn {
     text-decoration: none;
@@ -194,6 +181,10 @@
 }
 
 @media (max-width: 1240px) {
+
+    .hero-content {
+        margin-left: 200px;
+    }
 
     .hero-desc {
         font-size: 10px;
@@ -295,8 +286,22 @@
 
 @media (max-width: 768px) {
 
+    .hero-content {
+        margin-left: 300px;
+    }
+
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        font-size: 8px;
+    }
+
+
     .hero-desc {
-        font-size: 14px;
+        font-size: 9px;
         line-height: 1.7;
     }
 
