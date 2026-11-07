@@ -120,7 +120,6 @@
 }
 
 .product-category {
-    margin-bottom: 16px;
     color: #ccc;
     font-size: 17px;
     letter-spacing: 1px;
@@ -161,9 +160,10 @@
     align-items: center;
     border: 1px solid #777;
     color: #fff;
-    width: 120px;
-    height: 37px;
+    width: 150px;
+    height: 70px;
     justify-content: space-between;
+    margin-right: auto;
 }
 
 .quantity-selector button {
@@ -200,4 +200,64 @@
     font-size: 10px;
     text-align: center;
     text-decoration: none;
+}
+
+.featured-section {
+    display: flex;
+    align-items: stretch;
+    width: 82%;
+    margin: 70px auto;
+}
+
+.featured-image {
+    width: 50%;
+}
+
+.featured-image img {
+    height: 100%;
+    aspect-ratio: 3.5 / 3;
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 20px 90px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.featured-title {
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.featured-desc {
+    max-width: 350px;
+    margin-bottom: 20px;
+    color: #ddd;
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.featured-content .product-actions {
+    margin-top: 10px;
+}
+
+.btn-featured {
+    font-family: 'Work Sans', sans-serif;
+    width: 150px;
+    padding: 25px 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid var(--secondary);
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
 }
