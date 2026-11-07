@@ -55,3 +55,32 @@
      max-width: 450px;
      justify-content: left;
  }
+
+ .elegance-section {
+     padding: 100px 8%;
+     text-align: center;
+ }
+
+ .elegance-title {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 64px;
+     margin-bottom: 60px;
+ }
+
+ .elegance-images {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+ }
+
+ .hallway,
+ .plates {
+     width: 70%;
+     aspect-ratio: 4 / 5;
+ }
+
+ .tables {
+     width: 100%;
+     aspect-ratio: 4 / 5;
+ }
