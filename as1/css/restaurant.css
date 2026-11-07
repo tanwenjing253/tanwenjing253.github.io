@@ -24,6 +24,7 @@
      box-sizing: border-box;
      background-color: transparent;
      margin-right: 550px;
+     padding: 50px 50px;
  }
 
 
@@ -173,14 +174,17 @@
  }
 
  @media (max-width: 992px) {
+
+     .navbar {
+         opacity: 1;
+     }
+
      .hero {
          height: 700px;
          align-items: stretch;
          background-size: cover;
          background-position: center;
-         background-image:
-             linear-gradient(rgba(0, 0, 0, 0.85), rgba(21, 21, 21, 0.85)),
-             url('../images/bar-table.png');
+         background-image: url('../images/tabletbartable.jpg');
      }
 
      .hero-content {
@@ -226,7 +230,7 @@
      }
 
      .gallery-title {
-         font-size: 58px;
+         font-size: 65px;
      }
 
      .gallery-desc {
@@ -234,9 +238,15 @@
          font-size: 13px;
      }
 
+     .gallery-images {
+         display: flex;
+         flex-wrap: wrap;
+         width: 85%;
+         margin: 75px auto 0;
+     }
+
      .gallery-images img {
          width: 50%;
-         aspect-ratio: 1 / 1;
      }
 
      .review-section {
@@ -262,5 +272,104 @@
      .review-card {
          width: 100%;
          padding: 35px 25px;
+     }
+ }
+
+ @media (max-width: 600px) {
+
+     .hero {
+         height: 450px;
+         background-position: center 55px;
+     }
+
+     .hero-title {
+         font-size: 40px;
+     }
+
+     .hero-subtitle {
+         margin-bottom: 12px;
+         font-size: 10px;
+     }
+
+     .hero-desc {
+         line-height: 1.6;
+     }
+
+     /* Elegance section */
+     .elegance-section {
+         padding: 40px 8%;
+     }
+
+     .elegance-title {
+         margin-bottom: 25px;
+         font-size: 60px;
+         margin: 0 50px;
+     }
+
+     .elegance-images {
+         gap: 20px;
+     }
+
+     .elegance-images img {
+         width: 75%;
+         aspect-ratio: 4 / 5;
+     }
+
+     /* Gallery */
+     .gallery-section {
+         margin-top: 25px;
+     }
+
+     .gallery-title {
+         font-size: 84px;
+     }
+
+     .gallery-desc {
+         font-size: 19px;
+     }
+
+     .gallery-images {
+         width: 100%;
+         margin: 35px auto 0;
+     }
+
+     .gallery-images img {
+         width: 100%;
+         aspect-ratio: 1 / 1;
+     }
+
+     /* Reviews */
+     .review-section {
+         padding: 50px 12%;
+     }
+
+     .review-title {
+         margin-bottom: 25px;
+         font-size: 36px;
+     }
+
+     .popular-reviews {
+         gap: 25px;
+     }
+
+     .review-card {
+         width: 85%;
+         margin: 0 auto;
+         padding: 45px 25px;
+         justify-content: center;
+     }
+
+     .review-card h4 {
+         margin-bottom: 15px;
+         font-size: 14px;
+     }
+
+     .review-card p {
+         font-size: 11px;
+     }
+
+     .stars img {
+         width: 90px;
+         height: auto;
      }
  }
