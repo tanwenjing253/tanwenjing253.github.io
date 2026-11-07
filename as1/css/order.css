@@ -160,13 +160,22 @@
     align-items: center;
     border: 1px solid #777;
     color: #fff;
+    margin-right: auto;
+}
+
+.featured-quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #777;
+    color: #fff;
     width: 150px;
     height: 70px;
     justify-content: space-between;
     margin-right: auto;
 }
 
-.quantity-selector button {
+.quantity-selector button,
+.featured-quantity button {
     width: 30px;
     padding: 8px 0;
     border: 0;
@@ -260,4 +269,63 @@
     color: var(--primary);
     text-decoration: none;
     cursor: pointer;
+}
+
+.menu-columns {
+    display: flex;
+    gap: 24px;
+    /* Makes all cards the same height */
+}
+
+/* Override the 50% width from the previous section for these specific cards */
+.menu-columns .product-card {
+    width: 32%;
+    color: #fff;
+    background-color: #333;
+
+}
+
+/* Ensure images in this section have a consistent height */
+.menu-columns .product-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+/* --- STACKED ACTIONS (Full Width Buttons) --- */
+.product-actions.stacked {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+/* Make the quantity selector take full width */
+.quantity-selector.full-width {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Adjust the +/- buttons inside the full-width selector */
+.quantity-selector.full-width button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Make the buttons take full width */
+.btn-solid.full-width,
+.btn-outline.full-width {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-columns {
+    padding: 20px 30px;
 }
