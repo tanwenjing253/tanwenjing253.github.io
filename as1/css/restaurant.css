@@ -84,3 +84,34 @@
      width: 100%;
      aspect-ratio: 4 / 5;
  }
+
+ .gallery-section {
+     padding-top: 0;
+     text-align: center;
+     background-color: #fff;
+ }
+
+ .gallery-title {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 75px;
+     margin-bottom: 8px;
+ }
+
+ .gallery-desc {
+     margin: 0 auto 25px;
+     color: #333;
+     font-family: 'Lora', serif;
+     font-size: 14px;
+ }
+
+ .gallery-images {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+ }
+
+ .gallery-images img {
+     display: block;
+     width: 25%;
+     aspect-ratio: 1 / 1;
+ }
