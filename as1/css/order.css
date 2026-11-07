@@ -34,3 +34,170 @@
     font-weight: 400;
     line-height: 1.1;
 }
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 9%;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.section-subtitle {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+    color: #111;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-desc {
+    max-width: 500px;
+    color: #333;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.intro-action {
+    width: 150px;
+}
+
+.menu-section {
+    padding: 100px 200px;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu-subtitle {
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu-title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.product-favourite {
+    display: flex;
+    gap: 50px;
+}
+
+.product-favourite .product-card {
+    width: 50%;
+    color: #fff;
+    background-color: #333;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
+
+.product-info {
+    padding: 20px 30px;
+    height: 320px;
+}
+
+.product-category {
+    margin-bottom: 16px;
+    color: #ccc;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.product-name {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+}
+
+.product-desc {
+    margin-bottom: 15px;
+    color: #ddd;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 330px
+}
+
+.product-price {
+    margin-bottom: 25px;
+    color: #c5a15d;
+    font-size: 13px;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #777;
+    color: #fff;
+    width: 120px;
+    height: 37px;
+    justify-content: space-between;
+}
+
+.quantity-selector button {
+    width: 30px;
+    padding: 8px 0;
+    border: 0;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.quantity-selector span {
+    width: 30px;
+    text-align: center;
+}
+
+.btn-solid {
+    width: 145px;
+    height: 37px;
+    border: 1px solid #b99a60;
+    color: #fff;
+    background-color: #b99a60;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.product-actions .btn-outline {
+    display: block;
+    padding: 10px 14px;
+    border: 1px solid #777;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
