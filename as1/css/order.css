@@ -21,18 +21,31 @@
 }
 
 .hero-subtitle {
-    margin-bottom: 10px;
-    color: #ddd;
-    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    color: #fff;
+    font-size: 24px;
     letter-spacing: 1px;
 }
 
-.hero-title {
+.subtitle-line {
+    width: 160px;
+    border-top: 1px solid #ddd;
+}
+
+.hero-title,
+.tablet-title {
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 1.1;
+}
+
+.tablet-title {
+    display: none;
 }
 
 .intro-section {
@@ -115,8 +128,9 @@
 }
 
 .product-info {
+    height: auto;
     padding: 20px 30px;
-    height: 320px;
+    box-sizing: border-box;
 }
 
 .product-category {
@@ -165,24 +179,38 @@
 
 .featured-quantity {
     display: flex;
-    align-items: center;
-    border: 1px solid #777;
+    width: 162px;
+    height: 60px;
+    border: 1px solid #888;
     color: #fff;
-    width: 150px;
-    height: 70px;
-    justify-content: space-between;
-    margin-right: auto;
 }
 
-.quantity-selector button,
-.featured-quantity button {
+.quantity-minus,
+.quantity-value,
+.quantity-plus {
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.quantity-selector button {
     width: 30px;
+    height: 38px;
     padding: 8px 0;
-    border: 0;
     color: #fff;
     background-color: transparent;
     cursor: pointer;
 }
+
+.featured-quantity button {
+    padding: 8px 0;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 .quantity-selector span {
     width: 30px;
@@ -202,8 +230,6 @@
 }
 
 .product-actions .btn-outline {
-    display: block;
-    padding: 10px 14px;
     border: 1px solid #777;
     color: #fff;
     font-size: 10px;
@@ -256,28 +282,36 @@
 }
 
 .featured-content .product-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
     margin-top: 10px;
 }
 
-.btn-featured {
-    font-family: 'Work Sans', sans-serif;
+.featured-content .product-actions .btn-solid,
+.featured-content .product-actions .btn-featured {
     width: 150px;
-    padding: 25px 15px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    border: 1px solid var(--secondary);
-    color: var(--primary);
-    text-decoration: none;
-    cursor: pointer;
+    height: 60px;
+    margin: 0;
+    padding: 10px 15px;
+    margin-left: auto;
 }
 
 .menu-columns {
     display: flex;
     gap: 24px;
-    /* Makes all cards the same height */
 }
 
-/* Override the 50% width from the previous section for these specific cards */
+.menu-columns .product-name {
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.menu-columns .product-desc {
+    height: 90px;
+    margin-bottom: 12px;
+}
+
 .menu-columns .product-card {
     width: 32%;
     color: #fff;
@@ -285,14 +319,12 @@
 
 }
 
-/* Ensure images in this section have a consistent height */
 .menu-columns .product-card img {
     display: block;
     width: 100%;
     aspect-ratio: 4 / 3;
 }
 
-/* --- STACKED ACTIONS (Full Width Buttons) --- */
 .product-actions.stacked {
     display: flex;
     flex-direction: column;
@@ -300,13 +332,11 @@
     gap: 8px;
 }
 
-/* Make the quantity selector take full width */
 .quantity-selector.full-width {
     width: 100%;
     justify-content: space-between;
 }
 
-/* Adjust the +/- buttons inside the full-width selector */
 .quantity-selector.full-width button {
     width: 40px;
     height: 100%;
@@ -317,7 +347,6 @@
     font-size: 16px;
 }
 
-/* Make the buttons take full width */
 .btn-solid.full-width,
 .btn-outline.full-width {
     display: block;
@@ -366,4 +395,293 @@
     background-color: #b99a60;
     text-align: center;
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+    .hero {
+        height: 540px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        gap: 16px;
+    }
+
+    .subtitle-line {
+        width: 80px;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .tablet-title {
+        display: block;
+    }
+
+    .intro-section {
+        padding: 50px 8%;
+        gap: 25px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-desc {
+        font-size: 14px;
+    }
+
+    .menu-section {
+        padding: 55px 8%;
+    }
+
+    .menu-title {
+        font-size: 27px;
+    }
+
+    .product-favourite {
+        gap: 20px;
+    }
+
+    .product-favourite .product-card {
+        width: 48%;
+    }
+
+    .product-info {
+        height: auto;
+        padding: 18px;
+    }
+
+    .product-name {
+        font-size: 24px;
+    }
+
+    .product-desc {
+        font-size: 14px;
+    }
+
+    .product-favourite .product-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .product-favourite .quantity-selector {
+        width: 100%;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+
+    .product-favourite .product-actions .btn-solid,
+    .product-favourite .product-actions .btn-outline {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        width: 85%;
+        margin: 45px auto;
+    }
+
+    .featured-image,
+    .featured-content {
+        width: 100%;
+    }
+
+    .featured-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .featured-content {
+        padding: 30px;
+    }
+
+    .featured-title {
+        font-size: 38px;
+    }
+
+    .featured-desc {
+        font-size: 16px;
+    }
+
+    .menu-columns {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu-columns .product-card {
+        width: 48%;
+    }
+
+    .menu-columns .product-info {
+        height: auto;
+        padding: 16px;
+    }
+
+    .menu-columns .product-name {
+        font-size: 22px;
+    }
+
+    .menu-columns .product-desc {
+        font-size: 13px;
+    }
+
+    .checkout-section {
+        padding: 35px 8% 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        height: 440px;
+        background-position: center;
+    }
+
+    .hero-subtitle {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .subtitle-line {
+        width: 45px;
+    }
+
+    .tablet-title {
+        font-size: 34px;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 35px 7%;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .section-desc {
+        font-size: 13px;
+    }
+
+    .intro-action {
+        width: 130px;
+    }
+
+    .menu-section {
+        padding: 40px 6%;
+    }
+
+    .menu-title {
+        margin-bottom: 22px;
+        font-size: 26px;
+    }
+
+    .product-favourite {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .product-favourite .product-card {
+        width: 100%;
+    }
+
+    .product-info {
+        padding: 21px;
+    }
+
+    .product-category {
+        font-size: 12px;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+
+    .product-desc {
+        font-size: 13px;
+    }
+
+    .featured-section {
+        width: 88%;
+        margin: 35px auto;
+        flex-direction: column;
+    }
+
+    .featured-image,
+    .featured-content {
+        width: 100%;
+    }
+
+    .featured-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .featured-content {
+        padding: 50px;
+    }
+
+    .featured-title {
+        font-size: 30px;
+    }
+
+    .featured-desc {
+        font-size: 13px;
+    }
+
+    .menu-columns {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .menu-columns .product-card {
+        width: 100%;
+    }
+
+    .menu-columns .product-info {
+        padding: 16px;
+    }
+
+
+    .menu-columns .product-name {
+        font-size: 22px;
+    }
+
+
+    .menu-columns .product-desc {
+        font-size: 13px;
+    }
+
+    .checkout-section {
+        padding: 35px 8% 50px;
+    }
+
+    .checkout-title {
+        font-size: 24px;
+    }
+
+    .checkout-desc {
+        font-size: 12px;
+    }
+
+    .btn-checkout {
+        display: block;
+        width: 210px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
 }
