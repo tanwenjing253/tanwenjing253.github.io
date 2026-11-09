@@ -229,14 +229,10 @@
     }
 
     .hero-title {
-        font-size: 48px;
+        font-size: 95px;
     }
 
     /* Philosophy */
-    .philosophy-section {
-        padding: 45px 0 55px;
-    }
-
     .philosophy-section .section-heading {
         margin-bottom: 25px;
         font-size: 95px;
@@ -337,6 +333,111 @@
 
     .award-logo {
         width: 300px;
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .hero-image {
+        width: 100%;
+        height: 190px;
+        background-image: url('../images/ABOUTmobile.png');
+        background-position: center;
+    }
+
+    .hero-text-box {
+        width: 100%;
+        padding: 35px 8% 50px;
+    }
+
+    .subtitle-wrapper {
+        gap: 12px;
+    }
+
+    .line {
+        width: 35px;
+    }
+
+    .hero-title {
+        margin: 12px 0 18px;
+        font-size: 38px;
+    }
+
+    .hero-desc {
+        font-size: 13px;
+    }
+
+    /* Philosophy */
+
+
+    .philosophy-bg-left {
+        width: 100%;
+    }
+
+    .philosophy-bg-right {
+        display: none;
+    }
+
+
+    .philosophy-bg-left img {
+        aspect-ratio: 16/9;
+    }
+
+    .philosophy-text {
+        margin: 16px auto 0;
+        padding: 0 8%;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* Commitment */
+    .commitment-section {
+        height: 430px;
+        background-position: center;
+    }
+
+    .commitment-text-box {
+        width: 100%;
+        padding: 45px 10%;
+    }
+
+    .commitment-text-box .section-heading {
+        margin-bottom: 18px;
+        font-size: 32px;
+    }
+
+    .commitment-desc {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* Achievements */
+    .achievements-overlay {
+        padding: 45px 8% 55px;
+    }
+
+    .achievements-overlay .section-heading {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .achievements-desc {
+        font-size: 13px;
+    }
+
+    .awards-grid {
+        gap: 32px;
+        margin-top: 30px;
+    }
+
+    .award-number {
+        margin-bottom: 14px;
+        font-size: 24px;
+    }
+
+    .award-logo {
+        width: 180px;
         max-width: 75%;
     }
 }
