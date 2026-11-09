@@ -1,0 +1,146 @@
+.hero {
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.hero-split {
+    display: flex;
+    height: 680px;
+}
+
+.hero-image {
+    width: 57%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url('../images/aboutbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 43%;
+    padding: 40px 6%;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.line {
+    width: 55px;
+    border-top: 1px solid #777;
+}
+
+.hero-subtitle {
+    color: #ddd;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    margin: 16px 0 22px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.hero-desc {
+    max-width: 430px;
+    color: #ddd;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.philosophy-section {
+    padding: 55px 0 80px;
+    text-align: center;
+}
+
+.philosophy-section .section-heading {
+    margin-bottom: 14px;
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.philosophy-images {
+    display: flex;
+    gap: 50px;
+}
+
+.philosophy-bg-left,
+.philosophy-bg-right {
+    width: 51.5%;
+}
+
+
+.philosophy-text {
+    max-width: 1100px;
+    margin: 28px auto 0;
+    padding: 0 8%;
+    color: #333;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+}
+
+.commitment-section {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+}
+
+.commitment-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 50px 5%;
+    background-color: #000;
+}
+
+.commitment-text-box .section-heading {
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.commitment-desc {
+    color: #ddd;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.commitment-image {
+    display: flex;
+    width: 65%;
+}
+
+.commitment-image img {
+    display: block;
+    width: 50%;
+    height: auto;
+}

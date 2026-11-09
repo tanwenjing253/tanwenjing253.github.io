@@ -148,12 +148,8 @@
 }
 
 .product-desc {
-    margin-bottom: 15px;
-    color: #ddd;
     font-family: 'Lora', serif;
     font-size: 17px;
-    line-height: 1.6;
-    max-width: 330px
 }
 
 .product-price {
