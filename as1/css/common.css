@@ -3,9 +3,14 @@
 :root {
     --primary: #000;
     --secondary: #fff;
-    --text: #222;
-    --bg-light: #f9f9f9;
-    --radius: 8px;
+    --text: #a1a1a1;
+    --line: 1px solid #d3d3d3;
+    --navbar: #333;
+    --accent: #bda16b;
+    --bebas: 'Bebas Neue', sans-serif;
+    --lora: 'Lora', serif;
+    --work: 'Work Sans', sans-serif;
+
 }
 
 /* === GLOBAL RESET & TYPOGRAPHY === */
@@ -150,6 +155,8 @@ body {
     justify-content: center;
     margin-bottom: 25px;
     font-size: 24px;
+    margin-left: 0;
+    margin-right: 10px;
 }
 
 .footer-desc {
@@ -209,8 +216,4 @@ body {
         display: flex;
     }
 
-    .logo-container.footer-logo {
-        margin-left: 0;
-        margin-right: 10px;
-    }
 }

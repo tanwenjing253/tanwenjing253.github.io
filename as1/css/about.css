@@ -2,7 +2,7 @@
     height: 760px;
     display: flex;
     flex-direction: column;
-    background-color: #000;
+    background-color: var(--primary);
 }
 
 .hero-split {
@@ -27,8 +27,6 @@
     justify-content: center;
     width: 43%;
     padding: 40px 6%;
-    color: #fff;
-    background-color: #000;
     text-align: center;
 }
 
@@ -42,20 +40,19 @@
 
 .line {
     width: 55px;
-    border-top: 1px solid #777;
+    border-top: var(--line);
 }
 
 .hero-subtitle {
-    color: #ddd;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 .hero-title {
     margin: 16px 0 22px;
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondary);
+    font-family: var(--bebas);
     font-size: 64px;
     font-weight: 400;
     line-height: 1.1;
@@ -63,8 +60,8 @@
 
 .hero-desc {
     max-width: 430px;
-    color: #ddd;
-    font-family: 'Lora', serif;
+    color: var(--secondary);
+    font-family: var(--lora);
     font-size: 14px;
     line-height: 1.6;
 }
@@ -105,8 +102,8 @@
 .commitment-section {
     display: flex;
     width: 100%;
-    color: #fff;
-    background-color: #000;
+    color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .commitment-text-box {
@@ -115,20 +112,20 @@
     justify-content: center;
     width: 35%;
     padding: 50px 5%;
-    background-color: #000;
+    background-color: var(--primary);
 }
 
 .commitment-text-box .section-heading {
     margin-bottom: 25px;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 40px;
     font-weight: 400;
 }
 
 .commitment-desc {
     color: #ddd;
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 15px;
 
 }
@@ -142,8 +139,8 @@
 }
 
 .achievements-section {
-    color: #fff;
-    background-color: #000;
+    color: var(--secondary);
+    background-color: var(--primary);
     background-image:
         linear-gradient(rgba(27, 27, 27, 0.7), rgba(9, 8, 8, 0.7)),
         url('../images/achievebg.jpg');
@@ -159,8 +156,8 @@
 
 .achievements-overlay .section-heading {
     margin-bottom: 25px;
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondary);
+    font-family: var(--bebas);
     font-size: 44px;
     font-weight: 400;
 }
@@ -168,8 +165,7 @@
 .achievements-desc {
     max-width: 900px;
     margin: 0 auto;
-    color: #ddd;
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 15px;
     line-height: 1.6;
 }
@@ -192,9 +188,9 @@
     width: 60px;
     margin-bottom: 25px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #777;
+    border-bottom: var(--line);
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 30px;
     font-weight: 400;
 }
@@ -207,7 +203,6 @@
 
 @media (max-width: 1024px) {
 
-    /* Hero: photo above the text panel */
     .hero {
         height: auto;
     }
@@ -308,6 +303,11 @@
 
     .achievements-overlay .section-heading {
         font-size: 38px;
+    }
+
+    .achievements-section {
+        background-image:
+            url('../images/achievebg.jpg');
     }
 
     .achievements-desc {
