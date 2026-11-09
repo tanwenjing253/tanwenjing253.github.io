@@ -84,7 +84,7 @@
 
 .philosophy-images {
     display: flex;
-    gap: 50px;
+    gap: 8px;
 }
 
 .philosophy-bg-left,
@@ -104,7 +104,6 @@
 
 .commitment-section {
     display: flex;
-    align-items: stretch;
     width: 100%;
     color: #fff;
     background-color: #000;
@@ -131,16 +130,213 @@
     color: #ddd;
     font-family: 'Lora', serif;
     font-size: 15px;
-    line-height: 1.6;
+
 }
 
 .commitment-image {
     display: flex;
-    width: 65%;
 }
 
 .commitment-image img {
-    display: block;
     width: 50%;
+}
+
+.achievements-section {
+    color: #fff;
+    background-color: #000;
+    background-image:
+        linear-gradient(rgba(27, 27, 27, 0.7), rgba(9, 8, 8, 0.7)),
+        url('../images/achievebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.achievements-overlay {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.achievements-overlay .section-heading {
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.achievements-desc {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ddd;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.awards-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.award-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.award-number {
+    width: 60px;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #777;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.award-logo {
+    width: 85%;
+    max-width: 230px;
     height: auto;
+}
+
+@media (max-width: 1024px) {
+
+    /* Hero: photo above the text panel */
+    .hero {
+        height: auto;
+    }
+
+    .hero-split {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 560px;
+        background-image: url('../images/ABOUTtablet.png');
+    }
+
+    .hero-text-box {
+        width: 100%;
+        padding: 55px 10%;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    /* Philosophy */
+    .philosophy-section {
+        padding: 45px 0 55px;
+    }
+
+    .philosophy-section .section-heading {
+        margin-bottom: 25px;
+        font-size: 95px;
+    }
+
+    .philosophy-images {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .philosophy-bg-left,
+    .philosophy-bg-right {
+        width: 50%;
+    }
+
+    .philosophy-bg-left img,
+    .philosophy-bg-right img {
+        width: 120%;
+    }
+
+    .philosophy-bg-left img {
+        aspect-ratio: 6.16/5;
+    }
+
+    .philosophy-bg-right img {
+        aspect-ratio: 5.4/5;
+    }
+
+    .philosophy-text {
+        margin-top: 22px;
+        font-size: 14px;
+    }
+
+    /* Commitment: use one wide background photo */
+    .commitment-section {
+        display: flex;
+        height: 600px;
+        background-color: #000;
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+            url('../images/handswithwine.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .commitment-image {
+        display: none;
+    }
+
+    .commitment-text-box {
+        align-items: center;
+        width: 100%;
+        padding: 60px 12%;
+        background-color: transparent;
+        text-align: center;
+    }
+
+    .commitment-text-box .section-heading {
+        font-size: 36px;
+    }
+
+    .commitment-desc {
+        max-width: 600px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Achievements */
+    .achievements-overlay {
+        padding: 60px 8%;
+    }
+
+    .achievements-overlay .section-heading {
+        font-size: 38px;
+    }
+
+    .achievements-desc {
+        font-size: 14px;
+    }
+
+    .awards-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 35px;
+    }
+
+    .award-item {
+        width: 100%;
+    }
+
+    .award-number {
+        margin-bottom: 18px;
+        font-size: 26px;
+    }
+
+    .award-logo {
+        width: 300px;
+        max-width: 75%;
+    }
 }
