@@ -10,12 +10,12 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
 }
 
 .hero-content {
     width: 50%;
-    color: #fff;
+    color: var(--secondary);
     margin-top: 100px;
     box-sizing: border-box;
     background-color: transparent;
@@ -28,13 +28,13 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 25px;
-    color: #ccc;
+    color: var(--secondary);
     font-weight: 600;
     justify-content: left;
 }
 
 .hero-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 80px;
     font-weight: 400;
     line-height: 1;
@@ -46,7 +46,7 @@
 .hero-desc {
     font-size: 15px;
     line-height: 1.8;
-    color: #bbb;
+    color: var(--secondary);
     max-width: 450px;
     justify-content: left;
 }
@@ -60,22 +60,22 @@
 }
 
 .section-subtitle {
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-style: italic;
     font-size: 46px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #111;
+    color: var(--primary);
 }
 
 .section-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 70px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #111;
+    color: var(--primary);
 }
 
 .section-desc {
@@ -83,7 +83,7 @@
     margin: 0 auto 70px auto;
     font-size: 19px;
     line-height: 1.8;
-    color: #555;
+    color: var(--primary);
 }
 
 .menu-item {
@@ -94,11 +94,8 @@
 }
 
 .menu-item img {
-    width: 100%;
-    height: auto;
     object-fit: cover;
     margin-bottom: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .dessert img,
@@ -118,13 +115,13 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #111;
+    color: var(--primary);
 }
 
 
 .chef-specials-btn {
     text-decoration: none;
-    color: #333;
+    color: var(--primary);
 }
 
 .btn-outline:hover,
@@ -135,7 +132,7 @@
 }
 
 .chef-specials-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 40px;
     font-weight: 400;
     text-transform: uppercase;
@@ -166,7 +163,7 @@
 }
 
 .atmosphere-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 64px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -174,10 +171,10 @@
 }
 
 .atmosphere-desc {
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 16px;
     line-height: 1.8;
-    color: #ddd;
+    color: var(--secondary);
 }
 
 @media (max-width: 1240px) {
@@ -199,7 +196,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
 
     .hero {
         padding: 0;
@@ -209,7 +206,7 @@
         background-position: center top;
         background-size: 100% 50%;
         background-repeat: no-repeat;
-        background-color: #000;
+        background-color: var(--primary);
     }
 
     .hero-content {
@@ -217,7 +214,7 @@
         padding: 60px 8% 80px 8%;
         max-width: 100%;
         text-align: left;
-        background-color: #000;
+        background-color: var(--primary);
     }
 
     .hero-title {
@@ -252,7 +249,6 @@
     .dessert img,
     .seasonal img {
         width: 100%;
-        max-width: 100%;
         aspect-ratio: 4 / 3;
         border-radius: 0;
         margin-bottom: 25px;
@@ -263,7 +259,6 @@
     .seasonal {
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
         font-family: 'Bebas Neue', sans-serif;
     }
@@ -284,7 +279,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
     .hero-content {
         margin-left: 300px;
@@ -345,7 +340,7 @@
         flex-direction: column;
         height: auto;
         padding: 0;
-        background-color: #000;
+        background-color: var(--primary);
         background-image: none;
     }
 
@@ -357,10 +352,9 @@
 
     /* Style the text block underneath */
     .atmosphere-content {
-        position: relative;
         padding: 40px 8% 60px 8%;
         text-align: center;
-        background-color: #000;
+        background-color: var(--primary);
     }
 
     .atmosphere-title {
@@ -371,7 +365,7 @@
     .atmosphere-desc {
         font-size: 15px;
         line-height: 1.8;
-        color: #ddd;
+        color: var(--secondary);
         margin: 0 auto;
     }
 }

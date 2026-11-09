@@ -64,7 +64,7 @@
 
 .section-subtitle {
     margin-bottom: 12px;
-    color: #555;
+    color: var(--primary);
     font-size: 12px;
     letter-spacing: 1px;
 }
@@ -72,7 +72,7 @@
 .section-title {
     margin-bottom: 16px;
     color: #111;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 30px;
     font-weight: 400;
 }
@@ -80,7 +80,7 @@
 .section-desc {
     max-width: 500px;
     color: #333;
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 15px;
     line-height: 1.6;
 }
@@ -142,19 +142,19 @@
 .product-name {
     margin-bottom: 20px;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 31px;
     font-weight: 400;
 }
 
 .product-desc {
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 17px;
 }
 
 .product-price {
     margin-bottom: 25px;
-    color: #c5a15d;
+    color: var(--accent);
     font-size: 13px;
 }
 
@@ -216,9 +216,9 @@
 .btn-solid {
     width: 145px;
     height: 37px;
-    border: 1px solid #b99a60;
+    border: 1px solid var(--accent);
     color: #fff;
-    background-color: #b99a60;
+    background-color: var(--accent);
     font-size: 10px;
     text-align: center;
     cursor: pointer;
@@ -235,7 +235,6 @@
 
 .featured-section {
     display: flex;
-    align-items: stretch;
     width: 82%;
     margin: 70px auto;
 }
@@ -257,13 +256,13 @@
     padding: 20px 90px;
     color: var(--secondary);
     background-color: var(--primary);
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
 }
 
 .featured-title {
     margin-bottom: 25px;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 50px;
     font-weight: 400;
 }
@@ -272,14 +271,13 @@
     max-width: 350px;
     margin-bottom: 20px;
     color: #ddd;
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 19px;
     line-height: 1.6;
 }
 
 .featured-content .product-actions {
     display: flex;
-    justify-content: flex-start;
     gap: 30px;
     margin-top: 10px;
 }
@@ -324,7 +322,6 @@
 .product-actions.stacked {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     gap: 8px;
 }
 
@@ -360,26 +357,25 @@
     color: #fff;
     background-color: #000;
     text-align: center;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
 }
 
 .section-subtitle {
     margin-bottom: 10px;
-    color: #ccc;
 }
 
 .checkout-title {
     margin-bottom: 14px;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
     font-size: 26px;
     font-weight: 400;
 }
 
 .checkout-desc {
     margin-bottom: 20px;
-    color: #ddd;
-    font-family: 'Lora', serif;
+    color: var(--secondary);
+    font-family: var(--lora);
     font-size: 14px;
 }
 
@@ -388,10 +384,23 @@
     padding: 12px 15px;
     color: #fff;
     font-size: 15px;
-    background-color: #b99a60;
+    background-color: var(--accent);
     text-align: center;
     text-decoration: none;
 }
+
+@media (max-width: 1330px) {
+    .product-name {
+        font-size: 20px;
+    }
+
+    .product-desc {
+        font-size: 13px;
+    }
+
+}
+
+
 
 @media (max-width: 1024px) {
 
@@ -445,11 +454,6 @@
 
     .product-favourite .product-card {
         width: 48%;
-    }
-
-    .product-info {
-        height: auto;
-        padding: 18px;
     }
 
     .product-name {
