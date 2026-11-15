@@ -15,7 +15,6 @@
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url('../images/aboutbg.png');
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -35,7 +34,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 100%;
 }
 
 .line {
@@ -63,7 +61,6 @@
     color: var(--secondary);
     font-family: var(--lora);
     font-size: 14px;
-    line-height: 1.6;
 }
 
 .philosophy-section {
@@ -79,16 +76,16 @@
     font-weight: 400;
 }
 
-.philosophy-images {
+.philosophy-container {
     display: flex;
     gap: 8px;
+    margin: 5px;
 }
 
 .philosophy-bg-left,
 .philosophy-bg-right {
     width: 51.5%;
 }
-
 
 .philosophy-text {
     max-width: 1100px;
@@ -243,11 +240,6 @@
         width: 50%;
     }
 
-    .philosophy-bg-left img,
-    .philosophy-bg-right img {
-        width: 120%;
-    }
-
     .philosophy-bg-left img {
         aspect-ratio: 6.16/5;
     }
@@ -372,7 +364,7 @@
 
 
     .philosophy-bg-left {
-        width: 100%;
+        width: 88%;
     }
 
     .philosophy-bg-right {
@@ -381,7 +373,7 @@
 
 
     .philosophy-bg-left img {
-        aspect-ratio: 16/9;
+        aspect-ratio: 14/9;
     }
 
     .philosophy-text {
