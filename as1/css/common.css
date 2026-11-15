@@ -52,7 +52,25 @@ body {
 }
 
 .nav-links {
-    margin-left: 500px;
+    display: flex;
+    gap: 35px;
+    color: var(--secondary);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-links a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--secondary);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
 }
 
 .menu {
@@ -61,24 +79,18 @@ body {
 
 .submenu {
     opacity: 0;
-    /* make submenu not visible */
     position: absolute;
     pointer-events: none;
-    /* make the submenu not hoverable or clickable */
     transition: all 1.5s;
-    /* transition effect */
 }
 
 .has-submenu:hover>.submenu {
     opacity: 1;
-    /* visible when hover menu item */
     pointer-events: auto;
-    /* make the submenu hoverable/clickable again */
 }
 
 .submenu a {
     display: block;
-    /* make second link to next line */
     padding: 5px;
 }
 
@@ -101,27 +113,6 @@ body {
 .logo-icon {
     width: 40px;
     height: auto;
-}
-
-.nav-links {
-    display: flex;
-    gap: 35px;
-    color: var(--secondary);
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.nav-links a {
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--secondary);
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.nav-links a:hover {
-    opacity: 1;
 }
 
 /* === REUSABLE COMPONENTS === */
