@@ -138,18 +138,15 @@
 
  /* === DESSERT === */
  .dessert {
-     background-color: #fff;
+     background-color: var(--secondary);
  }
 
- /* full-width banner */
  .dessert .section-title {
      padding: 100px 0;
-     color: #fff;
-     font-family: 'Bebas Neue', sans-serif;
-     font-size: 72px;
-     font-weight: 400;
+     color: var(--secondary);
      text-align: center;
      background-image: url("../images/dessertbg.png");
+     background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
  }
@@ -167,7 +164,6 @@
      width: 25%;
  }
 
- /* items 2 and 4: caption above image, pushed down */
  .dessert-item:nth-child(even) {
      flex-direction: column-reverse;
      margin-top: 14%;
@@ -184,11 +180,57 @@
      align-items: center;
      padding: 10px 0;
      color: #111;
-     font-family: 'Bebas Neue', sans-serif;
+     font-family: var(--bebas);
      font-size: 24px;
  }
 
  .dessert-info p+p {
-     font-family: 'Work Sans', sans-serif;
+     font-family: var(--work);
      font-size: 14px;
+ }
+
+ /* === BEST COCKTAILS === */
+ .best-cocktails {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     min-height: 860px;
+     padding: 0 9%;
+     color: var(--secondary);
+     background-image:
+         linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)),
+         url('../images/bestcroctails.jpg');
+     background-position: center;
+     background-size: cover;
+ }
+
+ .section-title {
+     font-family: var(--bebas);
+     font-size: 72px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
+
+ .best-cocktails .subtitle {
+     margin: 10px 0 0 4px;
+     font-family: var(--work);
+     font-size: 14px;
+     letter-spacing: 1px;
+ }
+
+ .best-cocktails .subtitle::after {
+     content: "";
+     display: block;
+     width: 60px;
+     height: 1px;
+     margin-top: 80px;
+     background-color: var(--secondary);
+ }
+
+ .best-cocktails .description {
+     max-width: 400px;
+     margin: 40px 0 50px;
+     font-family: var(--lora);
+     font-size: 18px;
+     line-height: 1.8;
  }

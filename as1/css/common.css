@@ -168,6 +168,24 @@ body {
     border-color: var(--primary);
 }
 
+.btn-outline-light {
+    display: inline-block;
+    padding: 14px 18px;
+    color: var(--secondary);
+    background: transparent;
+    border: 1px solid var(--secondary);
+    font-family: var(--work);
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
 /* === FOOTER SECTION === */
 .footer {
     padding: 120px 8%;
