@@ -1,68 +1,194 @@
-.hero {
-    height: 530px;
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    background-image: url('../images/menubg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+ .navbar {
+     background-color: var(--primary);
+     padding: 20px 60px;
+     position: fixed;
+ }
 
-.hero-content {
-    margin: auto 0;
-    padding: 30px 8%;
-    color: #fff;
-    text-align: center;
-}
+ .hero {
+     height: 470px;
+     display: flex;
+     flex-direction: column;
+     background-image: url('../images/menubg.png');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
 
-.hero-kicker {
-    margin-bottom: 18px;
-    color: #ddd;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
+ .hero-content {
+     margin: auto 0;
+     color: #fff;
+     text-align: center;
+ }
 
-.hero-title {
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 1.1;
-}
+ .hero-kicker {
+     margin-bottom: 18px;
+     color: #ddd;
+     font-family: 'Work Sans', sans-serif;
+     font-size: 14px;
+     letter-spacing: 1px;
+ }
 
-.chefs-recommendation {
-    padding: 80px 3%;
-    background-color: #fff;
-}
+ .hero-title {
+     color: #fff;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 72px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
 
-.recommendation-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
+ .chefs-recommendation {
+     padding: 10px 50px 80px;
+     background-color: #fff;
+ }
 
-.recommendation-item {
-    position: relative;
-    width: 32%;
-}
+ .recommendation-container {
+     display: flex;
+     justify-content: space-between;
+     gap: 40px;
+ }
 
-.recommendation-item img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1.1;
-}
+ .recommendation-item {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     width: 100%;
+     aspect-ratio: 1 / 1.1;
+     padding: 18px;
+     color: #fff;
+     background-size: cover;
+     background-position: center;
+ }
 
-.recommendation-item p {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 18px;
-    color: #fff;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px;
-    text-align: right;
-}
+ .recommendation-lobster {
+     background-image:
+         linear-gradient(transparent, rgb(8 8 8 / 23%)),
+         url('../images/butterlobster.png');
+ }
+
+ .recommendation-chocolate {
+     background-image:
+         linear-gradient(transparent, rgb(8 8 8 / 23%)),
+         url('../images/chocBall.jpg');
+ }
+
+ .recommendation-duck {
+     background-image:
+         linear-gradient(transparent, rgb(8 8 8 / 23%)),
+         url('../images/duckbreastt.png');
+ }
+
+ .recommendation-item p {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 24px;
+     text-align: right;
+ }
+
+ .main-course {
+     display: flex;
+     width: 100%;
+ }
+
+ .main-course-images {
+     width: 55%;
+ }
+
+ .main-course-images img {
+     width: 100%;
+ }
+
+ .main-course-menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 50%;
+     padding: 60px 6%;
+     color: #111;
+     background-color: #fff;
+ }
+
+ .main-course-menu .section-title {
+     margin-bottom: 35px;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 72px;
+     font-weight: 400;
+ }
+
+
+ .menu-item {
+     display: block;
+     padding: 16px 0;
+     border-bottom: 1px solid #ccc;
+ }
+
+ .menu-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 16px;
+ }
+
+ .menu-name {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 24px;
+ }
+
+ .menu-price {
+     font-family: 'Work Sans', sans-serif;
+     font-size: 14px;
+ }
+
+ /* === DESSERT === */
+ .dessert {
+     background-color: #fff;
+ }
+
+ /* full-width banner */
+ .dessert .section-title {
+     padding: 100px 0;
+     color: #fff;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 72px;
+     font-weight: 400;
+     text-align: center;
+     background-image: url("../images/dessertbg.png");
+     background-position: center;
+     background-size: cover;
+ }
+
+ .dessert-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 18px;
+     padding: 80px 9%;
+ }
+
+ .dessert-item {
+     display: flex;
+     flex-direction: column;
+     width: 25%;
+ }
+
+ /* items 2 and 4: caption above image, pushed down */
+ .dessert-item:nth-child(even) {
+     flex-direction: column-reverse;
+     margin-top: 14%;
+ }
+
+ .dessert-item img {
+     width: 100%;
+     aspect-ratio: 1 / 1.42;
+ }
+
+ .dessert-info {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 0;
+     color: #111;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 24px;
+ }
+
+ .dessert-info p+p {
+     font-family: 'Work Sans', sans-serif;
+     font-size: 14px;
+ }
