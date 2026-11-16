@@ -184,7 +184,6 @@
 
      .hero {
          height: 700px;
-         align-items: stretch;
          background-size: cover;
          background-position: center;
          background-image: url('../images/tabletbartable.jpg');
