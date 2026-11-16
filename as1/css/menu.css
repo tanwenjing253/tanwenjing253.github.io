@@ -184,7 +184,7 @@
      font-size: 24px;
  }
 
- .dessert-info p+p {
+ .dessert-info p:last-child {
      font-family: var(--work);
      font-size: 14px;
  }
@@ -233,4 +233,182 @@
      font-family: var(--lora);
      font-size: 18px;
      line-height: 1.8;
+ }
+
+ @media (max-width: 1024px) {
+
+     .hero {
+         height: 400px;
+     }
+
+
+     /* chef's recommendation: stacked */
+     .chefs-recommendation {
+         padding: 90px 8% 75px;
+     }
+
+     .recommendation-container {
+         flex-direction: column;
+         gap: 65px;
+     }
+
+     .recommendation-item {
+         aspect-ratio: 1 / 1;
+     }
+
+     /* main course: photo on top, menu below */
+     .main-course {
+         flex-direction: column;
+     }
+
+     .main-course-images,
+     .main-course-menu {
+         width: 100%;
+     }
+
+     .main-course-images img {
+         display: block;
+     }
+
+     .main-course-menu {
+         padding: 60px 8%;
+     }
+
+     /* dessert: one per row, caption above image */
+     .dessert .section-title {
+         padding: 85px 0;
+     }
+
+     .dessert-container {
+         flex-direction: column;
+         gap: 90px;
+         padding: 100px 10% 40px;
+     }
+
+     .dessert-item,
+     .dessert-item:nth-child(even) {
+         flex-direction: column-reverse;
+         width: 100%;
+         margin-top: 0;
+     }
+
+     .dessert-item img {
+         aspect-ratio: 1 / 1;
+     }
+
+     .dessert-info {
+         font-size: 22px;
+     }
+
+     .dessert-info p:last-child {
+         font-size: 13px;
+     }
+
+     /* best cocktails */
+     .best-cocktails {
+         min-height: 700px;
+         padding: 0 8%;
+     }
+
+     .best-cocktails .subtitle::after {
+         margin-top: 65px;
+     }
+
+     .best-cocktails .description {
+         max-width: 380px;
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 640px) {
+
+     .hero-title,
+     .section-title,
+     .main-course-menu .section-title {
+         font-size: 42px;
+     }
+
+     /* chef's recommendation: full-width cards */
+     .chefs-recommendation {
+         padding: 68px 0 30px;
+     }
+
+     .recommendation-container {
+         gap: 40px;
+     }
+
+     .recommendation-item p {
+         font-size: 20px;
+         text-align: center;
+     }
+
+     /* main course: photo hidden, title centred */
+     .main-course-images {
+         display: none;
+     }
+
+     .main-course-menu {
+         padding: 30px 7% 90px;
+     }
+
+     .main-course-menu .section-title {
+         text-align: center;
+     }
+
+     .menu-item {
+         padding: 20px 0;
+     }
+
+     /* dessert: caption goes back below the image */
+     .dessert .section-title {
+         padding: 80px 0;
+     }
+
+     .dessert-container {
+         gap: 45px;
+         padding: 70px 7% 50px;
+     }
+
+     .dessert-item,
+     .dessert-item:nth-child(even) {
+         flex-direction: column;
+     }
+
+     .dessert-item img {
+         aspect-ratio: 1 / 1.42;
+     }
+
+     .dessert-info {
+         font-size: 18px;
+     }
+
+     .dessert-info p:last-child {
+         font-size: 12px;
+     }
+
+     /* best cocktails */
+     .best-cocktails {
+         min-height: 480px;
+     }
+
+     .best-cocktails .section-title {
+         max-width: 200px;
+         font-size: 52px;
+     }
+
+     .best-cocktails .subtitle::after {
+         margin-top: 25px;
+     }
+
+     .best-cocktails .description {
+         max-width: 270px;
+         margin: 20px 0 40px;
+         font-size: 14px;
+         line-height: 1.5;
+     }
+
+     .best-cocktails .btn {
+         padding: 10px 14px;
+         font-size: 11px;
+     }
  }
