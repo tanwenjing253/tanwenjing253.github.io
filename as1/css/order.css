@@ -90,7 +90,7 @@
 }
 
 .menu-section {
-    padding: 100px 200px;
+    padding: 50px 70px;
     color: #fff;
     background-color: #000;
     font-family: 'Work Sans', sans-serif;
@@ -240,7 +240,7 @@
 }
 
 .featured-image {
-    width: 50%;
+    width: 45%;
 }
 
 .featured-image img {
@@ -252,7 +252,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+    width: 55%;
     padding: 20px 90px;
     color: var(--secondary);
     background-color: var(--primary);

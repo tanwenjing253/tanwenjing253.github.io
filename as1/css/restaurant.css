@@ -74,18 +74,18 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 100px;
+     gap: 30px;
  }
 
  .hallway,
  .plates {
-     width: 70%;
-     aspect-ratio: 4 / 5;
+     width: 30%;
+
  }
 
  .tables {
-     width: 100%;
-     aspect-ratio: 4 / 5;
+     width: 40%;
+
  }
 
  .gallery-section {

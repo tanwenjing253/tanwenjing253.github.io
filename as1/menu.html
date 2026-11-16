@@ -4,34 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romaliya Restaurant</title>
+    <title>Menu | Romaliya Restaurant</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
-    <div class="hero">
+    <header class="hero">
         <nav class="navbar">
             <div class="logo-container">
-                <img class="logo-icon" src="images/logo.png" alt="Logo">
+                <img class="logo-icon" src="images/logo.png" alt="Romaliya logo">
                 ROMALIYA
             </div>
+
             <div class="nav-links">
-                <a href="http://127.0.0.1:5500/as1/index.html#">Home</a>
+                <a href="index.html">Home</a>
+
                 <div class="has-submenu">
                     <a href="#">Menu</a>
                     <div class="submenu">
-                        <a href="#">Promotion</a>
                         <a href="#">Recipes</a>
                     </div>
                 </div>
-                <a href="http://127.0.0.1:5500/as1/order.html">Order</a>
-                <div class="submenu">
-                    <a href="#">Delivery</a>
-                    <a href="#">Promotion</a>
-                </div>
+
                 <div class="has-submenu">
-                    <a href="http://127.0.0.1:5 500/as1/about.html">About Us</a>
+                    <a href="order.html">Order</a>
+                    <div class="submenu">
+                        <a href="#">Delivery</a>
+                    </div>
+                </div>
+
+                <a href="#">Promotion</a>
+
+                <div class="has-submenu">
+                    <a href="about.html">About Us</a>
                     <div class="submenu">
                         <a href="#">New</a>
                         <a href="#">Team</a>
@@ -39,25 +45,182 @@
                         <a href="#">FAQ</a>
                     </div>
                 </div>
+
                 <div class="has-submenu">
-                    <a href="http://127.0.0.1:5500/as1/restaurant.html">Our Restaurant</a>
+                    <a href="restaurant.html">Our Restaurant</a>
                     <div class="submenu">
-                        <a href="#">Reception & Bar</a>
+                        <a href="#">Reception &amp; Bar</a>
                         <a href="#">Visual Gallery</a>
                     </div>
                 </div>
-                <img src="images/menuicon.png" width="30" height="30" alt="shop">
+
+                <img src="images/menuicon.png" width="30" height="30" alt="Shopping bag">
             </div>
+
             <div class="menu">
-                <img src="images/menu.png" alt="Menu">
+                <img src="images/menu.png" alt="Open menu">
             </div>
         </nav>
-    </div>
 
-    <div class="footer">
+        <div class="hero-content">
+            <p class="hero-kicker">CHEF'S</p>
+            <h1 class="hero-title">RECOMMENDATION</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="chefs-recommendation">
+            <div class="recommendation-grid">
+                <div class="recommendation-item">
+                    <img src="images/butterlobster.png" alt="Butter-poached lobster">
+                    <p>BUTTER-POACHED LOBSTER</p>
+                </div>
+
+                <div class="recommendation-item">
+                    <img src="images/chocBall.jpg" alt="Chocolate ball on cake">
+                    <p>CHOCOLATE BALL ON CAKE</p>
+                </div>
+
+                <div class="recommendation-item">
+                    <img src="images/duckbreastt.png" alt="Duck breast with cherry sauce">
+                    <p>DUCK BREAST WITH CHERRY SAUCE</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-course">
+            <div class="main-course-images">
+                <img src="images/maincourse.jpg" alt="A selection of main course dishes">
+            </div>
+
+            <div class="main-course-menu">
+                <h2 class="section-title">MAIN COURSE</h2>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">BRAISED ABALONE</p>
+                            <p class="menu-price">$52</p>
+                        </div>
+                        <p class="menu-desc">
+                            Premium abalone slowly braised in a rich savory sauce until tender and flavorful.
+                        </p>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">TWICE COOKED PORK</p>
+                            <p class="menu-price">$21</p>
+                        </div>
+                        <p class="menu-desc">
+                            Tender sliced pork stir-fried with vegetables in a fragrant spicy sauce.
+                        </p>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">KUNG PAO CHICKEN</p>
+                            <p class="menu-price">$32</p>
+                        </div>
+                        <p class="menu-desc">
+                            Classic diced chicken wok-fried with peanuts, dried chiles, and vegetables in a savory-spicy
+                            sauce.
+                        </p>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">CALIFORNIA ROLLS</p>
+                            <p class="menu-price">$22</p>
+                        </div>
+                        <p class="menu-desc">
+                            Fresh sushi rolls filled with crab, avocado, cucumber, and creamy mayonnaise.
+                        </p>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">STEAMED MUSSELS</p>
+                            <p class="menu-price">$59</p>
+                        </div>
+                        <p class="menu-desc">
+                            Fresh mussels steamed with garlic, herbs, and white wine for a delicate seafood flavor.
+                        </p>
+                    </li>
+
+                    <li class="menu-item">
+                        <div class="menu-header">
+                            <p class="menu-name">CHAR SIU &amp; SUSHI</p>
+                            <p class="menu-price">$45</p>
+                        </div>
+                        <p class="menu-desc">
+                            A delicious combination of Cantonese barbecue pork and freshly prepared sushi.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="dessert">
+            <h2 class="section-title">DESSERT</h2>
+
+            <div class="dessert-container">
+                <div class="dessert-item">
+                    <img src="images/LimePie.jpg" alt="Lime pie with dark crust">
+                    <div class="dessert-info">
+                        <p>LIME PIE WITH DARK CRUST</p>
+                        <p>$14</p>
+                    </div>
+                </div>
+
+                <div class="dessert-item">
+                    <img src="images/tiramisu.png" alt="Classic tiramisu">
+                    <div class="dessert-info">
+                        <p>CLASSIC TIRAMISU</p>
+                        <p>$20</p>
+                    </div>
+                </div>
+
+                <div class="dessert-item">
+                    <img src="images/RPcake.jpg" alt="Raspberry and pear cake">
+                    <div class="dessert-info">
+                        <p>RASPBERRY AND PEAR CAKE</p>
+                        <p>$18</p>
+                    </div>
+                </div>
+
+                <div class="dessert-item">
+                    <img src="images/CremeBrulee.png" alt="Crème brûlée">
+                    <div class="dessert-info">
+                        <p>CRÈME BRÛLÉE</p>
+                        <p>$20</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-cocktails">
+            <div class="cocktails-content">
+                <h2 class="section-title">BEST COCKTAILS</h2>
+                <p class="subtitle">IN TOWN</p>
+                <p class="description">
+                    Enjoy a selection of handcrafted cocktails made with premium spirits and fresh ingredients.
+                    Whether you prefer classic favorites or unique signature drinks, there's a perfect cocktail for
+                    every taste.
+                </p>
+                <a href="#" class="btn">ABOUT OUR COCKTAILS</a>
+            </div>
+
+            <div class="cocktails-image">
+                <img src="images/bestcroctails.jpg" alt="Handcrafted cocktails">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="footer-content">
             <div class="logo-container footer-logo">
-                <img class="logo-icon" src="images/logo.png" alt="Logo">
+                <img class="logo-icon" src="images/logo.png" alt="Romaliya logo">
                 ROMALIYA
             </div>
 
@@ -67,21 +230,21 @@
             </p>
 
             <div class="social-icons">
-                <a href=https://www.facebook.com/ class="social-icon" aria-label="Facebook">
-                    <img src="images/fb.png" alt="Facebook">
+                <a href="https://www.facebook.com/" class="social-icon" aria-label="Facebook">
+                    <img src="images/fb.png" alt="">
                 </a>
-                <a href=https://x.com/ class="social-icon" aria-label="X">
-                    <img src="images/twit.png" alt="X">
+                <a href="https://x.com/" class="social-icon" aria-label="X">
+                    <img src="images/twit.png" alt="">
                 </a>
-                <a href=https://www.instagram.com/ class="social-icon" aria-label="Instagram">
-                    <img src="images/insta.png" alt="Instagram">
+                <a href="https://www.instagram.com/" class="social-icon" aria-label="Instagram">
+                    <img src="images/insta.png" alt="">
                 </a>
-                <a href=https://www.youtube.com/ class="social-icon" aria-label="YouTube">
-                    <img src="images/youtube.png" alt="YouTube">
+                <a href="https://www.youtube.com/" class="social-icon" aria-label="YouTube">
+                    <img src="images/youtube.png" alt="">
                 </a>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

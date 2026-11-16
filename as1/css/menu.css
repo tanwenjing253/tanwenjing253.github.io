@@ -1,0 +1,68 @@
+.hero {
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    background-image: url('../images/menubg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    margin: auto 0;
+    padding: 30px 8%;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-kicker {
+    margin-bottom: 18px;
+    color: #ddd;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.chefs-recommendation {
+    padding: 80px 3%;
+    background-color: #fff;
+}
+
+.recommendation-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.recommendation-item {
+    position: relative;
+    width: 32%;
+}
+
+.recommendation-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+}
+
+.recommendation-item p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 18px;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-align: right;
+}
