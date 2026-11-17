@@ -277,37 +277,28 @@ body {
         padding: 20px 8%;
     }
 
-    .nav-links {
-        display: none;
-    }
-
     .menu-toggle {
         display: block;
     }
 
-    .menu {
+    .nav-links {
         height: 100vh;
         width: 100%;
         opacity: 0;
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #222;
-
         position: fixed;
         top: 0;
         right: -100%;
-
         transition: all 0.3s ease;
-        /* make smooth transition */
         z-index: 1000;
     }
 
     .menu.active {
         opacity: 1;
         right: 0;
-        /* change from -100% to 0 */
     }
 
 }
