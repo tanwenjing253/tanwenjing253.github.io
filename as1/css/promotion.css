@@ -171,7 +171,6 @@
 
  .evening .section-title {
      margin-bottom: 36px;
-     color: var(--secondary);
      font-family: var(--bebas);
      font-size: 60px;
      font-weight: 400;
@@ -239,7 +238,6 @@
  /* item 3: image indented, title right */
  .offer-item--indent {
      align-items: center;
-     height: auto;
  }
 
  .offer-item--indent .offer-image {
@@ -299,6 +297,7 @@
      background-image:
          linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)),
          url('../images/membershipbg.jpg');
+     background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
  }
@@ -340,19 +339,19 @@
      background-size: cover;
  }
 
- .membership-card--classic {
+ .membership-classic {
      background-image:
 
          url('../images/classicbg.jpg');
  }
 
- .membership-card--prestige {
+ .membership-prestige {
      background-image:
 
          url('../images/prestigebg.jpg');
  }
 
- .membership-card--elite {
+ .membership-elite {
      background-image:
 
          url('../images/elitebg.jpg');
@@ -407,4 +406,168 @@
  .membership-card .btn-outline:hover {
      color: var(--primary);
      background: var(--secondary);
+ }
+
+ @media (max-width: 1024px) {
+
+     /* --- hero: photo on top, text below --- */
+     .promo-hero {
+         flex-direction: column;
+         height: auto;
+     }
+
+     .promo-hero-image {
+         width: 100%;
+         height: 990px;
+     }
+
+     .promo-hero-content {
+         width: 100%;
+         padding: 105px 23% 100px;
+     }
+
+     .promo-hero-title {
+         font-size: 100px;
+     }
+
+     .promo-hero-content .btn {
+         width: 160px;
+     }
+
+     /* --- seasonal: one card per row --- */
+     .seasonal {
+         padding: 120px 0 105px;
+     }
+
+     .seasonal-script {
+         font-size: 48px;
+     }
+
+     .seasonal .section-title {
+         font-size: 68px;
+     }
+
+     .seasonal-intro {
+         max-width: 520px;
+         margin: 40px auto 0;
+         font-size: 18px;
+     }
+
+     .seasonal-container {
+         flex-direction: column;
+         align-items: center;
+         gap: 100px;
+         margin-top: 65px;
+         padding: 0;
+     }
+
+     .seasonal-card {
+         width: 55%;
+     }
+
+     .seasonal-name {
+         font-size: 30px;
+     }
+
+     .seasonal-desc {
+         max-width: 330px;
+         margin: 15px auto 25px;
+         font-size: 18px;
+     }
+
+     /* --- evening banner --- */
+     .evening {
+         min-height: 490px;
+     }
+
+     .evening .section-title {
+         font-size: 64px;
+     }
+
+     .evening-desc {
+         max-width: 560px;
+     }
+
+     /* --- offers: image on top, title below --- */
+     .offers {
+         padding: 105px 0 125px;
+     }
+
+     .offer-item,
+     .offer-item--reverse,
+     .offer-item--indent {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         height: auto;
+         margin: 0 0 95px;
+     }
+
+     /* item 2 has the title first in the HTML, so flip it */
+     .offer-item--reverse {
+         flex-direction: column-reverse;
+     }
+
+     .offer-item .offer-image,
+     .offer-item--reverse .offer-image,
+     .offer-item--indent .offer-image {
+         width: 56%;
+         margin-left: 0;
+     }
+
+     .offer-item .offer-title,
+     .offer-item--reverse .offer-title,
+     .offer-item--indent .offer-title {
+         width: 100%;
+         margin-top: 45px;
+         font-size: 30px;
+     }
+
+     .offers-footer {
+         margin-top: 30px;
+     }
+
+     .offers-note {
+         font-size: 13px;
+     }
+
+     .offers .btn-outline {
+         width: 160px;
+     }
+
+     /* --- membership: two cards per row --- */
+     .membership-banner {
+         padding: 135px 9%;
+     }
+
+     .membership-banner .section-title {
+         font-size: 64px;
+     }
+
+     .membership-intro {
+         max-width: 560px;
+         font-size: 18px;
+     }
+
+     .membership-container {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         gap: 95px 90px;
+         padding: 105px 11.5% 115px;
+     }
+
+     .membership-card {
+         width: 44%;
+         height: 440px;
+         padding: 30px 20px;
+     }
+
+     .membership-benefits {
+         padding-left: 12px;
+     }
+
+     .membership-benefits li {
+         font-size: 16px;
+         margin-bottom: 0;
+     }
  }
