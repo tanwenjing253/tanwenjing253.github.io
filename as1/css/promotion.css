@@ -2,6 +2,7 @@
      background-color: var(--primary);
      position: fixed;
      top: 0;
+     z-index: 10;
  }
 
  /* === PROMO HERO === */
@@ -110,7 +111,6 @@
  .seasonal-container {
      display: flex;
      justify-content: space-between;
-     align-items: flex-start;
      margin-top: 80px;
      padding: 0 9.5%;
  }
@@ -121,11 +121,8 @@
 
  /* pill-shaped photo */
  .seasonal-card img {
-     display: block;
      width: 100%;
-     aspect-ratio: 1 / 1.33;
-     object-fit: cover;
-     border-radius: 999px;
+
  }
 
  .seasonal-name {
@@ -146,4 +143,268 @@
  .seasonal-card .btn-outline {
      width: 160px;
      border-color: #aaa;
+ }
+
+ .evening {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 460px;
+     padding: 60px 9%;
+     color: var(--secondary);
+     text-align: center;
+     background-color: var(--primary);
+     background-image:
+         url('../images/romanticbg.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+
+ .evening-kicker {
+     margin-bottom: 14px;
+     font-family: var(--work);
+     font-size: 13px;
+     letter-spacing: 1px;
+ }
+
+ .evening .section-title {
+     margin-bottom: 36px;
+     color: var(--secondary);
+     font-family: var(--bebas);
+     font-size: 60px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
+
+ .evening-desc {
+     max-width: 780px;
+     font-family: var(--lora);
+     font-size: 18px;
+     line-height: 2;
+ }
+
+ /* === OFFERS (collage) === */
+ .offers {
+     padding: 85px 0 60px;
+     background-color: var(--secondary);
+ }
+
+ .offer-item {
+     display: flex;
+     width: 1166px;
+     height: 709px;
+     margin: 0 auto;
+ }
+
+ .offer-image img {
+     width: 100%;
+ }
+
+ .offer-title {
+     padding: 0 20px;
+     color: #111;
+     font-family: var(--bebas);
+     font-size: 28px;
+     font-weight: 400;
+     line-height: 1.2;
+     text-align: center;
+ }
+
+ /* item 1: image left, title right */
+ .offer-item .offer-image {
+     width: 65%;
+ }
+
+ .offer-item .offer-title {
+     width: 35%;
+     margin-top: 455px;
+ }
+
+ /* item 2: title left, image right */
+ .offer-item--reverse {
+     height: 599px;
+ }
+
+ .offer-item--reverse .offer-image {
+     width: 48.8%;
+ }
+
+ .offer-item--reverse .offer-title {
+     width: 51.2%;
+     margin-top: 338px;
+ }
+
+ /* item 3: image indented, title right */
+ .offer-item--indent {
+     align-items: center;
+     height: auto;
+ }
+
+ .offer-item--indent .offer-image {
+     width: 40.9%;
+     margin-left: 23.7%;
+ }
+
+ .offer-item--indent .offer-title {
+     width: 35.4%;
+     margin-top: 0;
+ }
+
+ /* images 1 and 3 sit on top of image 2 */
+ .offer-item:nth-child(odd) .offer-image {
+     position: relative;
+ }
+
+ /* note + button */
+ .offers-footer {
+     margin-top: 45px;
+     text-align: center;
+ }
+
+ .offers-note {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 16px;
+     margin-bottom: 20px;
+     color: #111;
+     font-family: var(--work);
+     font-size: 12px;
+     letter-spacing: 0.5px;
+ }
+
+ .offers-note::before,
+ .offers-note::after {
+     content: "";
+     width: 26px;
+     height: 1px;
+     background-color: #555;
+ }
+
+ .offers .btn-outline {
+     width: 150px;
+     border-color: #aaa;
+ }
+
+ .membership {
+     background-color: var(--secondary);
+ }
+
+ .membership-banner {
+     padding: 130px 9%;
+     color: var(--secondary);
+     text-align: center;
+     background-image:
+         linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)),
+         url('../images/membershipbg.jpg');
+     background-position: center;
+     background-size: cover;
+ }
+
+ .membership-banner .section-title {
+     margin-bottom: 36px;
+     color: var(--secondary);
+     font-family: var(--bebas);
+     font-size: 60px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
+
+ .membership-intro {
+     max-width: 790px;
+     margin: 0 auto;
+     font-family: var(--lora);
+     font-size: 17px;
+     line-height: 1.8;
+ }
+
+ /* three cards */
+ .membership-container {
+     display: flex;
+     justify-content: space-between;
+     padding: 40px 9.5% 65px;
+ }
+
+ .membership-card {
+     display: flex;
+     flex-direction: column;
+     width: 28%;
+     height: 410px;
+     padding: 30px 35px;
+     color: var(--secondary);
+     background-color: var(--primary);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+
+ .membership-card--classic {
+     background-image:
+
+         url('../images/classicbg.jpg');
+ }
+
+ .membership-card--prestige {
+     background-image:
+
+         url('../images/prestigebg.jpg');
+ }
+
+ .membership-card--elite {
+     background-image:
+
+         url('../images/elitebg.jpg');
+ }
+
+ .membership-tier {
+     font-family: var(--work);
+     font-size: 11px;
+     letter-spacing: 1px;
+     text-align: center;
+ }
+
+ .membership-price {
+     margin-top: 30px;
+     font-family: var(--bebas);
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 1.2;
+     text-align: center;
+ }
+
+ .membership-benefits {
+     margin-top: 35px;
+     list-style-type: none;
+ }
+
+ .membership-benefits li {
+     margin-bottom: 18px;
+     font-family: var(--lora);
+     font-size: 17px;
+     line-height: 1.6;
+ }
+
+ /* star bullet */
+ .membership-benefits li::before {
+     content: "★";
+     margin-right: 12px;
+     font-size: 13px;
+ }
+
+ /* APPLY button pinned to the bottom of each card */
+ .membership-card .btn-outline {
+     width: 150px;
+     margin: auto auto 0;
+     padding: 8px 20px;
+     color: var(--secondary);
+     border-color: var(--secondary);
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .membership-card .btn-outline:hover {
+     color: var(--primary);
+     background: var(--secondary);
  }
