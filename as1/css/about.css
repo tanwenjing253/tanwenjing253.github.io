@@ -79,7 +79,6 @@
 .philosophy-container {
     display: flex;
     gap: 8px;
-    margin: 5px;
 }
 
 .philosophy-bg-left,

@@ -58,6 +58,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.intro-section .btn-outline {
+    margin-top: 100px;
+}
+
 .intro-text {
     max-width: 600px;
 }
