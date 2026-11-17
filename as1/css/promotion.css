@@ -409,336 +409,331 @@
      background: var(--secondary);
  }
 
- @media (max-width: 1250px) {
+ @media (max-width: 1024px) {
 
-
-
-
-     @media (max-width: 1024px) {
-
-         /* --- hero: photo on top, text below --- */
-         .promo-hero {
-             flex-direction: column;
-             height: auto;
-         }
-
-         .promo-hero-image {
-             width: 100%;
-             height: 990px;
-         }
-
-         .promo-hero-content {
-             width: 100%;
-             padding: 105px 23% 100px;
-         }
-
-         .promo-hero-title {
-             font-size: 100px;
-         }
-
-         .promo-hero-content .btn {
-             width: 160px;
-         }
-
-         /* ---one card per row --- */
-         .seasonal {
-             padding: 120px 0 105px;
-         }
-
-         .seasonal-script {
-             font-size: 48px;
-         }
-
-         .seasonal .section-title {
-             font-size: 68px;
-         }
-
-         .seasonal-intro {
-             max-width: 520px;
-             margin: 40px auto 0;
-             font-size: 18px;
-         }
-
-         .seasonal-container {
-             flex-direction: column;
-             align-items: center;
-             gap: 100px;
-             margin-top: 65px;
-             padding: 0;
-         }
-
-         .seasonal-card {
-             width: 55%;
-         }
-
-         .seasonal-name {
-             font-size: 30px;
-         }
-
-         .seasonal-desc {
-             max-width: 330px;
-             margin: 15px auto 25px;
-             font-size: 18px;
-         }
-
-         /* --- evening banner --- */
-         .evening {
-             min-height: 490px;
-         }
-
-         .evening .section-title {
-             font-size: 64px;
-         }
-
-         .evening-desc {
-             max-width: 560px;
-         }
-
-         /* --- offers: image on top, title below --- */
-         .offers {
-             padding: 105px 0 125px;
-         }
-
-         .offer-item,
-         .offer-item--reverse,
-         .offer-item--indent {
-             flex-direction: column;
-             align-items: center;
-             width: 100%;
-
-         }
-
-         /* item 2 has the title first in the HTML, so flip it */
-         .offer-item--reverse {
-             flex-direction: column-reverse;
-         }
-
-         .offer-item .offer-image,
-         .offer-item--reverse .offer-image,
-         .offer-item--indent .offer-image {
-             width: 56%;
-             margin-left: 0;
-         }
-
-         .offer-item .offer-title,
-         .offer-item--reverse .offer-title,
-         .offer-item--indent .offer-title {
-             width: 100%;
-             margin-top: 45px;
-             font-size: 30px;
-         }
-
-         .offers-footer {
-             margin-top: 30px;
-         }
-
-         .offers-note {
-             font-size: 13px;
-         }
-
-         .offers .btn-outline {
-             width: 160px;
-         }
-
-         /* --- membership: two cards per row --- */
-         .membership-banner {
-             padding: 135px 9%;
-         }
-
-         .membership-banner .section-title {
-             font-size: 64px;
-         }
-
-         .membership-intro {
-             max-width: 560px;
-             font-size: 18px;
-         }
-
-         .membership-container {
-             flex-wrap: wrap;
-             justify-content: flex-start;
-             gap: 95px 10%;
-             padding: 105px 11.5% 115px;
-         }
-
-         .membership-card {
-             width: 44%;
-             height: 440px;
-             padding: 30px 20px;
-         }
-
-         .membership-benefits {
-             padding-left: 12px;
-         }
-
-         .membership-benefits li {
-             margin-bottom: 18px;
-             font-size: 16px;
-         }
+     /* --- hero: photo on top, text below --- */
+     .promo-hero {
+         flex-direction: column;
+         height: auto;
      }
 
-     @media (max-width: 640px) {
-
-         .promo-hero {
-             flex-direction: column;
-             height: auto;
-             margin-top: 70px;
-         }
-
-         .promo-hero-image {
-             width: 100%;
-             height: 480px;
-         }
-
-         .promo-hero-content {
-             width: 100%;
-             padding: 40px 24px 45px;
-         }
-
-         .promo-hero-kicker {
-             margin-bottom: 18px;
-             font-size: 11px;
-         }
-
-         .promo-hero-title {
-             margin-bottom: 20px;
-             font-size: 44px;
-             line-height: 1.1;
-         }
-
-         .promo-hero-desc {
-             max-width: 100%;
-             font-size: 14px;
-             line-height: 1.7;
-         }
-
-         .offers {
-             padding: 50px 0 50px;
-         }
-
-         .offer-item,
-         .offer-item--reverse,
-         .offer-item--indent {
-             flex-direction: column;
-             align-items: center;
-             width: 100%;
-             height: auto;
-             margin: 0 0 40px;
-         }
-
-         .offer-item--reverse {
-             flex-direction: column-reverse;
-         }
-
-         .offer-item .offer-image,
-         .offer-item--reverse .offer-image,
-         .offer-item--indent .offer-image {
-             width: 86%;
-             margin-left: 0;
-         }
-
-         .offer-image img {
-             display: block;
-             width: 100%;
-         }
-
-         .offer-item .offer-title,
-         .offer-item--reverse .offer-title,
-         .offer-item--indent .offer-title {
-             margin-top: 16px;
-             font-size: 20px;
-         }
-
-         .offers-footer {
-             margin-top: 10px;
-         }
-
-         .offers-note {
-             gap: 10px;
-
-             font-size: 13px;
-         }
-
-         .offers-note::before,
-         .offers-note::after {
-             width: 20px;
-         }
-
-         .offers .btn-outline {
-             width: 120px;
-             padding: 10px 0;
-             font-size: 12px;
-         }
-
-         .seasonal-script {
-             font-size: 44px;
-         }
-
-         .seasonal .section-title {
-             font-size: 50px;
-         }
-
-         .seasonal-intro {
-             max-width: 520px;
-             margin: 40px auto 0;
-             font-size: 16px;
-         }
-
-         .membership-banner {
-             background-image: url(../images/mobilememberbg.png);
-         }
-
-         .membership-banner .section-title {
-             margin-bottom: 20px;
-             font-size: 36px;
-         }
-
-         .membership-intro {
-             font-size: 14px;
-             line-height: 1.7;
-         }
-
-         .membership-container {
-             flex-direction: column;
-             flex-wrap: nowrap;
-             align-items: center;
-             justify-content: flex-start;
-             gap: 28px;
-             padding: 40px 24px 50px;
-         }
-
-         .membership-card {
-             width: 100%;
-             max-width: 320px;
-             height: auto;
-             min-height: 300px;
-             padding: 90px 50px;
-         }
-
-         .membership-tier {
-             font-size: 10px;
-         }
-
-         .membership-price {
-             margin-top: 18px;
-             font-size: 22px;
-         }
-
-         .membership-benefits {
-             margin-top: 22px;
-             padding-left: 0;
-         }
-
-         .membership-benefits li {
-             margin-bottom: 10px;
-             font-size: 14px;
-             line-height: 1.5;
-         }
-
-         .membership-card .btn-outline {
-             width: 110px;
-             margin: 24px auto 0;
-             padding: 7px 0;
-             font-size: 10px;
-         }
+     .promo-hero-image {
+         width: 100%;
+         height: 990px;
      }
+
+     .promo-hero-content {
+         width: 100%;
+         padding: 105px 23% 100px;
+     }
+
+     .promo-hero-title {
+         font-size: 100px;
+     }
+
+     .promo-hero-content .btn {
+         width: 160px;
+     }
+
+     /* ---one card per row --- */
+     .seasonal {
+         padding: 120px 0 105px;
+     }
+
+     .seasonal-script {
+         font-size: 48px;
+     }
+
+     .seasonal .section-title {
+         font-size: 68px;
+     }
+
+     .seasonal-intro {
+         max-width: 520px;
+         margin: 40px auto 0;
+         font-size: 18px;
+     }
+
+     .seasonal-container {
+         flex-direction: column;
+         align-items: center;
+         gap: 100px;
+         margin-top: 65px;
+         padding: 0;
+     }
+
+     .seasonal-card {
+         width: 55%;
+     }
+
+     .seasonal-name {
+         font-size: 30px;
+     }
+
+     .seasonal-desc {
+         max-width: 330px;
+         margin: 15px auto 25px;
+         font-size: 18px;
+     }
+
+     /* --- evening banner --- */
+     .evening {
+         min-height: 490px;
+     }
+
+     .evening .section-title {
+         font-size: 64px;
+     }
+
+     .evening-desc {
+         max-width: 560px;
+     }
+
+     /* --- offers: image on top, title below --- */
+     .offers {
+         padding: 105px 0 125px;
+     }
+
+     .offer-item,
+     .offer-item--reverse,
+     .offer-item--indent {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+
+     }
+
+     /* item 2 has the title first in the HTML, so flip it */
+     .offer-item--reverse {
+         flex-direction: column-reverse;
+     }
+
+     .offer-item .offer-image,
+     .offer-item--reverse .offer-image,
+     .offer-item--indent .offer-image {
+         width: 56%;
+         margin-left: 0;
+     }
+
+     .offer-item .offer-title,
+     .offer-item--reverse .offer-title,
+     .offer-item--indent .offer-title {
+         width: 100%;
+         margin-top: 45px;
+         font-size: 30px;
+     }
+
+     .offers-footer {
+         margin-top: 30px;
+     }
+
+     .offers-note {
+         font-size: 13px;
+     }
+
+     .offers .btn-outline {
+         width: 160px;
+     }
+
+     /* --- membership: two cards per row --- */
+     .membership-banner {
+         padding: 135px 9%;
+     }
+
+     .membership-banner .section-title {
+         font-size: 64px;
+     }
+
+     .membership-intro {
+         max-width: 560px;
+         font-size: 18px;
+     }
+
+     .membership-container {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         gap: 95px 10%;
+         padding: 105px 11.5% 115px;
+     }
+
+     .membership-card {
+         width: 44%;
+         height: 440px;
+         padding: 30px 20px;
+     }
+
+     .membership-benefits {
+         padding-left: 12px;
+     }
+
+     .membership-benefits li {
+         margin-bottom: 18px;
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 640px) {
+
+     .promo-hero {
+         flex-direction: column;
+         height: auto;
+         margin-top: 70px;
+     }
+
+     .promo-hero-image {
+         width: 100%;
+         height: 480px;
+     }
+
+     .promo-hero-content {
+         width: 100%;
+         padding: 40px 24px 45px;
+     }
+
+     .promo-hero-kicker {
+         margin-bottom: 18px;
+         font-size: 11px;
+     }
+
+     .promo-hero-title {
+         margin-bottom: 20px;
+         font-size: 44px;
+         line-height: 1.1;
+     }
+
+     .promo-hero-desc {
+         max-width: 100%;
+         font-size: 14px;
+         line-height: 1.7;
+     }
+
+     .offers {
+         padding: 50px 0 50px;
+     }
+
+     .offer-item,
+     .offer-item--reverse,
+     .offer-item--indent {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         height: auto;
+         margin: 0 0 40px;
+     }
+
+     .offer-item--reverse {
+         flex-direction: column-reverse;
+     }
+
+     .offer-item .offer-image,
+     .offer-item--reverse .offer-image,
+     .offer-item--indent .offer-image {
+         width: 86%;
+         margin-left: 0;
+     }
+
+     .offer-image img {
+         display: block;
+         width: 100%;
+     }
+
+     .offer-item .offer-title,
+     .offer-item--reverse .offer-title,
+     .offer-item--indent .offer-title {
+         margin-top: 16px;
+         font-size: 20px;
+     }
+
+     .offers-footer {
+         margin-top: 10px;
+     }
+
+     .offers-note {
+         gap: 10px;
+
+         font-size: 13px;
+     }
+
+     .offers-note::before,
+     .offers-note::after {
+         width: 20px;
+     }
+
+     .offers .btn-outline {
+         width: 120px;
+         padding: 10px 0;
+         font-size: 12px;
+     }
+
+     .seasonal-script {
+         font-size: 44px;
+     }
+
+     .seasonal .section-title {
+         font-size: 50px;
+     }
+
+     .seasonal-intro {
+         max-width: 520px;
+         margin: 40px auto 0;
+         font-size: 16px;
+     }
+
+     .membership-banner {
+         background-image: url(../images/mobilememberbg.png);
+     }
+
+     .membership-banner .section-title {
+         margin-bottom: 20px;
+         font-size: 36px;
+     }
+
+     .membership-intro {
+         font-size: 14px;
+         line-height: 1.7;
+     }
+
+     .membership-container {
+         flex-direction: column;
+         flex-wrap: nowrap;
+         align-items: center;
+         justify-content: flex-start;
+         gap: 28px;
+         padding: 40px 24px 50px;
+     }
+
+     .membership-card {
+         width: 100%;
+         max-width: 320px;
+         height: auto;
+         min-height: 300px;
+         padding: 90px 50px;
+     }
+
+     .membership-tier {
+         font-size: 10px;
+     }
+
+     .membership-price {
+         margin-top: 18px;
+         font-size: 22px;
+     }
+
+     .membership-benefits {
+         margin-top: 22px;
+         padding-left: 0;
+     }
+
+     .membership-benefits li {
+         margin-bottom: 10px;
+         font-size: 14px;
+         line-height: 1.5;
+     }
+
+     .membership-card .btn-outline {
+         width: 110px;
+         margin: 24px auto 0;
+         padding: 7px 0;
+         font-size: 10px;
+     }
+ }
