@@ -323,7 +323,7 @@
  .membership-container {
      display: flex;
      justify-content: space-between;
-     padding: 40px 9.5% 65px;
+     padding: 50px 100px;
  }
 
  .membership-card {
@@ -408,6 +408,27 @@
      background: var(--secondary);
  }
 
+ @media (max-width: 1250px) {
+
+     .membership-price {
+         font-size: 26px;
+     }
+
+     .membership-banner .section-title {
+         font-size: 70px;
+     }
+
+     .membership-intro {
+         font-size: 16px;
+     }
+
+     .membership-benefits li {
+         font-size: 14px;
+         margin-bottom: 5px;
+     }
+ }
+
+
  @media (max-width: 1024px) {
 
      /* --- hero: photo on top, text below --- */
@@ -418,23 +439,23 @@
 
      .promo-hero-image {
          width: 100%;
-         height: 990px;
+         height: 700px;
      }
 
      .promo-hero-content {
          width: 100%;
-         padding: 105px 23% 100px;
+         padding: 105px 100px;
      }
 
      .promo-hero-title {
-         font-size: 100px;
+         font-size: 80px;
      }
 
      .promo-hero-content .btn {
          width: 160px;
      }
 
-     /* --- seasonal: one card per row --- */
+     /* ---one card per row --- */
      .seasonal {
          padding: 120px 0 105px;
      }
@@ -511,8 +532,8 @@
      .offer-item .offer-image,
      .offer-item--reverse .offer-image,
      .offer-item--indent .offer-image {
-         width: 56%;
-         margin-left: 0;
+         width: 60%;
+         margin: auto;
      }
 
      .offer-item .offer-title,
@@ -552,7 +573,7 @@
      .membership-container {
          flex-wrap: wrap;
          justify-content: flex-start;
-         gap: 95px 90px;
+         gap: 95px 10%;
          padding: 105px 11.5% 115px;
      }
 
@@ -567,7 +588,115 @@
      }
 
      .membership-benefits li {
+         margin-bottom: 18px;
          font-size: 16px;
-         margin-bottom: 0;
+     }
+ }
+
+ @media (max-width: 640px) {
+
+     .promo-hero {
+         flex-direction: column;
+         height: auto;
+         margin-top: 70px;
+     }
+
+     .promo-hero-image {
+         width: 100%;
+         height: 480px;
+     }
+
+     .promo-hero-content {
+         width: 100%;
+         padding: 40px 24px 45px;
+     }
+
+     .promo-hero-kicker {
+         margin-bottom: 18px;
+         font-size: 11px;
+     }
+
+     .promo-hero-title {
+         margin-bottom: 20px;
+         font-size: 44px;
+         line-height: 1.1;
+     }
+
+     .promo-hero-desc {
+         max-width: 100%;
+         font-size: 14px;
+         line-height: 1.7;
+     }
+
+     .seasonal-script {
+         font-size: 44px;
+     }
+
+     .seasonal .section-title {
+         font-size: 50px;
+     }
+
+     .seasonal-intro {
+         max-width: 520px;
+         margin: 40px auto 0;
+         font-size: 16px;
+     }
+
+     .membership-banner {
+         background-image: url(../images/mobilememberbg.png);
+     }
+
+     .membership-banner .section-title {
+         margin-bottom: 20px;
+         font-size: 36px;
+     }
+
+     .membership-intro {
+         font-size: 14px;
+         line-height: 1.7;
+     }
+
+     .membership-container {
+         flex-direction: column;
+         flex-wrap: nowrap;
+         align-items: center;
+         justify-content: flex-start;
+         gap: 28px;
+         padding: 40px 24px 50px;
+     }
+
+     .membership-card {
+         width: 100%;
+         max-width: 320px;
+         height: auto;
+         min-height: 300px;
+         padding: 90px 50px;
+     }
+
+     .membership-tier {
+         font-size: 10px;
+     }
+
+     .membership-price {
+         margin-top: 18px;
+         font-size: 22px;
+     }
+
+     .membership-benefits {
+         margin-top: 22px;
+         padding-left: 0;
+     }
+
+     .membership-benefits li {
+         margin-bottom: 10px;
+         font-size: 14px;
+         line-height: 1.5;
+     }
+
+     .membership-card .btn-outline {
+         width: 110px;
+         margin: 24px auto 0;
+         padding: 7px 0;
+         font-size: 10px;
      }
  }
