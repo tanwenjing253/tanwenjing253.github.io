@@ -73,10 +73,6 @@ body {
     opacity: 1;
 }
 
-.menu {
-    display: none;
-}
-
 .submenu {
     opacity: 0;
     position: absolute;
@@ -92,6 +88,13 @@ body {
 .submenu a {
     display: block;
     padding: 5px;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
 }
 
 .has-submenu>a::after {
@@ -267,7 +270,7 @@ body {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
 
     .navbar {
         background-color: #000;
@@ -278,8 +281,33 @@ body {
         display: none;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .menu {
-        display: flex;
+        height: 100vh;
+        width: 100%;
+        opacity: 0;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        transition: all 0.3s ease;
+        /* make smooth transition */
+        z-index: 1000;
+    }
+
+    .menu.active {
+        opacity: 1;
+        right: 0;
+        /* change from -100% to 0 */
     }
 
 }
