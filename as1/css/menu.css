@@ -1,5 +1,5 @@
  .navbar {
-     background-color: var(--primary);
+     background-color: var(--blk);
      padding: 20px 60px;
      position: fixed;
  }
@@ -11,25 +11,26 @@
      background-image: url('../images/menubg.png');
      background-repeat: no-repeat;
      background-position: center;
+
  }
 
  .hero-content {
      margin: auto 0;
-     color: #fff;
+     color: var(--wht);
      text-align: center;
  }
 
  .hero-kicker {
      margin-bottom: 18px;
-     color: #ddd;
-     font-family: 'Work Sans', sans-serif;
+     color: var(--wht);
+     font-family: var(--work);
      font-size: 14px;
      letter-spacing: 1px;
  }
 
  .hero-title {
-     color: #fff;
-     font-family: 'Bebas Neue', sans-serif;
+     color: var(--wht);
+     font-family: var(--bebas);
      font-size: 72px;
      font-weight: 400;
      line-height: 1.1;
@@ -37,7 +38,7 @@
 
  .chefs-recommendation {
      padding: 10px 50px 80px;
-     background-color: #fff;
+     background-color: var(--wht);
  }
 
  .recommendation-container {
@@ -53,7 +54,7 @@
      width: 100%;
      aspect-ratio: 1 / 1.1;
      padding: 18px;
-     color: #fff;
+     color: var(--wht);
      background-size: cover;
      background-position: center;
  }
@@ -77,7 +78,7 @@
  }
 
  .recommendation-item p {
-     font-family: 'Bebas Neue', sans-serif;
+     font-family: var(--bebas);
      font-size: 24px;
      text-align: right;
  }
@@ -101,13 +102,13 @@
      justify-content: center;
      width: 50%;
      padding: 60px 6%;
-     color: #111;
-     background-color: #fff;
+     color: var(--blk);
+     background-color: var(--wht);
  }
 
  .main-course-menu .section-title {
      margin-bottom: 35px;
-     font-family: 'Bebas Neue', sans-serif;
+     font-family: var(--bebas);
      font-size: 72px;
      font-weight: 400;
  }
@@ -127,23 +128,23 @@
  }
 
  .menu-name {
-     font-family: 'Bebas Neue', sans-serif;
+     font-family: var(--bebas);
      font-size: 24px;
  }
 
  .menu-price {
-     font-family: 'Work Sans', sans-serif;
+     font-family: var(--work);
      font-size: 14px;
  }
 
  /* === DESSERT === */
  .dessert {
-     background-color: var(--secondary);
+     background-color: var(--wht);
  }
 
  .dessert .section-title {
      padding: 100px 0;
-     color: var(--secondary);
+     color: var(--wht);
      text-align: center;
      background-image: url("../images/dessertbg.png");
      background-repeat: no-repeat;
@@ -179,7 +180,7 @@
      justify-content: space-between;
      align-items: center;
      padding: 10px 0;
-     color: #111;
+     color: var(--blk);
      font-family: var(--bebas);
      font-size: 24px;
  }
@@ -196,7 +197,7 @@
      justify-content: center;
      min-height: 860px;
      padding: 0 9%;
-     color: var(--secondary);
+     color: var(--wht);
      background-image:
          linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)),
          url('../images/bestcroctails.jpg');
@@ -224,7 +225,7 @@
      width: 60px;
      height: 1px;
      margin-top: 80px;
-     background-color: var(--secondary);
+     background-color: var(--wht);
  }
 
  .best-cocktails .description {

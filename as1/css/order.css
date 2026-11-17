@@ -16,7 +16,7 @@
     width: 100%;
     margin: auto 0;
     padding: 0 8%;
-    color: #fff;
+    color: var(--wht);
     text-align: center;
 }
 
@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 28px;
-    color: #fff;
+    color: var(--wht);
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -37,9 +37,9 @@
 
 .hero-title,
 .tablet-title {
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
+    color: var(--wht);
+    font-family: var(--bebas);
+    font-size: 70px;
     font-weight: 400;
     line-height: 1.1;
 }
@@ -54,8 +54,8 @@
     align-items: center;
     gap: 40px;
     padding: 80px 9%;
-    background-color: #fff;
-    font-family: 'Work Sans', sans-serif;
+    background-color: var(--wht);
+    font-family: var(--work);
 }
 
 .intro-section .btn-outline {
@@ -68,14 +68,14 @@
 
 .section-subtitle {
     margin-bottom: 12px;
-    color: var(--primary);
+    color: var(--blk);
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 .section-title {
     margin-bottom: 16px;
-    color: #111;
+    color: var(--blk);
     font-family: var(--bebas);
     font-size: 30px;
     font-weight: 400;
@@ -95,9 +95,9 @@
 
 .menu-section {
     padding: 50px 70px;
-    color: #fff;
-    background-color: #000;
-    font-family: 'Work Sans', sans-serif;
+    color: var(--wht);
+    background-color: var(--blk);
+    font-family: var(--work);
 }
 
 .menu-subtitle {
@@ -109,8 +109,8 @@
 
 .menu-title {
     margin-bottom: 30px;
-    color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    color: var(--wht);
+    font-family: var(--bebas);
     font-size: 30px;
     font-weight: 400;
 }
@@ -122,7 +122,7 @@
 
 .product-favourite .product-card {
     width: 50%;
-    color: #fff;
+    color: var(--wht);
     background-color: #333;
 }
 
@@ -145,7 +145,7 @@
 
 .product-name {
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 31px;
     font-weight: 400;
@@ -172,8 +172,8 @@
 .quantity-selector {
     display: flex;
     align-items: center;
-    border: 1px solid var(--secondary);
-    color: #fff;
+    border: 1px solid var(--wht);
+    color: var(--wht);
     margin-right: auto;
 }
 
@@ -195,20 +195,26 @@
     font-size: 14px;
 }
 
+.featured-quantity button {
+    padding: 8px 0;
+    color: var(--wht);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
 .quantity-selector button {
     width: 30px;
     height: 38px;
     padding: 8px 0;
-    color: #fff;
+    color: var(--wht);
     background-color: transparent;
     cursor: pointer;
-}
-
-.featured-quantity button {
-    padding: 8px 0;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
+    border: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 
@@ -258,14 +264,14 @@
     justify-content: center;
     width: 55%;
     padding: 20px 90px;
-    color: var(--secondary);
-    background-color: var(--primary);
+    color: var(--wht);
+    background-color: var(--blk);
     font-family: var(--work);
 }
 
 .featured-title {
     margin-bottom: 25px;
-    color: #fff;
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 50px;
     font-weight: 400;
@@ -312,7 +318,7 @@
 
 .menu-columns .product-card {
     width: 32%;
-    color: #fff;
+    color: var(--wht);
     background-color: #333;
 
 }
@@ -375,14 +381,14 @@
 
 .checkout-desc {
     margin-bottom: 20px;
-    color: var(--secondary);
+    color: var(--wht);
     font-family: var(--lora);
     font-size: 14px;
 }
 
 .btn-checkout {
     padding: 12px 15px;
-    color: #fff;
+    color: var(--wht);
     font-size: 15px;
     background-color: var(--accent);
     text-decoration: none;

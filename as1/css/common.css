@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary: #000;
-    --secondary: #fff;
+    --blk: #000;
+    --wht: #fff;
     --text: #a1a1a1;
     --line: 1px solid #d3d3d3;
     --navbar: #333;
@@ -45,26 +45,25 @@ body {
 /* === NAVIGATION BAR === */
 .navbar {
     width: 100%;
-    padding: 40px 50px;
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .menu {
     display: flex;
     gap: 35px;
-    color: var(--secondary);
+    color: var(--wht);
     font-weight: 400;
     letter-spacing: 0.5px;
     align-items: center;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
 }
 
 .menu-item a {
     font-size: 14px;
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--wht);
     opacity: 0.7;
     transition: opacity 0.3s ease;
 }
@@ -89,13 +88,13 @@ body {
     display: block;
     padding: 5px;
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--wht);
 }
 
 .menu-toggle {
     z-index: 1001;
     display: none;
-    color: var(--secondary);
+    color: var(--wht);
     font-size: 30px;
     cursor: pointer;
 }
@@ -109,11 +108,11 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: var(--secondary);
+    color: var(--wht);
     font-weight: 700;
     font-size: 19px;
     letter-spacing: 1px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--bebas);
 }
 
 .logo-icon {
@@ -124,7 +123,7 @@ body {
 /* === REUSABLE COMPONENTS === */
 .btn {
     color: var(--text);
-    background: var(--primary);
+    background: var(--blk);
     padding: 10px 16px;
     border: none;
     border-radius: var(--radius);
@@ -132,14 +131,14 @@ body {
 }
 
 .btn-outline {
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
     display: block;
     width: 120px;
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 12px;
     letter-spacing: 1px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--blk);
     color: #333;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -151,7 +150,7 @@ body {
     width: 145px;
     height: 37px;
     border: 1px solid var(--accent);
-    color: #fff;
+    color: var(--wht);
     background-color: var(--accent);
     font-size: 10px;
     text-align: center;
@@ -162,24 +161,24 @@ body {
 .quantity-selector.full-width button {
     width: 40px;
     height: 100%;
-    border-color: #fff;
-    color: #fff;
+    border-color: var(--wht);
+    color: var(--wht);
     cursor: pointer;
     font-size: 16px;
 }
 
 .btn-outline:hover {
-    background: var(--primary);
-    color: var(--secondary);
-    border-color: var(--primary);
+    background: var(--blk);
+    color: var(--wht);
+    border-color: var(--blk);
 }
 
 .btn-outline-light {
     display: inline-block;
     padding: 14px 18px;
-    color: var(--secondary);
+    color: var(--wht);
     background: transparent;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--wht);
     font-family: var(--work);
     font-size: 13px;
     letter-spacing: 1px;
@@ -188,15 +187,15 @@ body {
 }
 
 .btn-outline-light:hover {
-    color: var(--primary);
-    background: var(--secondary);
+    color: var(--blk);
+    background: var(--wht);
 }
 
 /* === FOOTER SECTION === */
 .footer {
     padding: 120px 8%;
     text-align: center;
-    background-color: #000;
+    background-color: var(--blk);
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
         url('../images/envi_foot.jpg');
@@ -211,7 +210,7 @@ body {
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-    color: var(--secondary);
+    color: var(--wht);
 }
 
 .footer-logo {
@@ -237,7 +236,7 @@ body {
 .social-icon {
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    background-color: var(--wht);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -264,11 +263,11 @@ body {
 }
 
 @media (max-width: 1140px) {
-    .big-menu {
+    .menu {
         margin-left: 150px;
     }
 
-    .big-menu a {
+    .menu-item a {
         font-size: 12px;
     }
 }
@@ -276,7 +275,7 @@ body {
 @media (max-width: 1024px) {
 
     .navbar {
-        background-color: #000;
+        background-color: var(--blk);
         padding: 20px 8%;
     }
 

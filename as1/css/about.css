@@ -2,7 +2,7 @@
     height: 760px;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary);
+    background-color: var(--blk);
 }
 
 .hero-split {
@@ -49,7 +49,7 @@
 
 .hero-title {
     margin: 16px 0 22px;
-    color: var(--secondary);
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 64px;
     font-weight: 400;
@@ -58,7 +58,7 @@
 
 .hero-desc {
     max-width: 430px;
-    color: var(--secondary);
+    color: var(--wht);
     font-family: var(--lora);
     font-size: 14px;
 }
@@ -70,8 +70,8 @@
 
 .philosophy-section .section-heading {
     margin-bottom: 14px;
-    color: #000;
-    font-family: 'Bebas Neue', sans-serif;
+    color: var(--blk);
+    font-family: var(--bebas);
     font-size: 48px;
     font-weight: 400;
 }
@@ -91,15 +91,15 @@
     margin: 28px auto 0;
     padding: 0 8%;
     color: #333;
-    font-family: 'Lora', serif;
+    font-family: var(--lora);
     font-size: 15px;
 }
 
 .commitment-section {
     display: flex;
     width: 100%;
-    color: var(--secondary);
-    background-color: var(--primary);
+    color: var(--wht);
+    background-color: var(--blk);
 }
 
 .commitment-text-box {
@@ -108,12 +108,12 @@
     justify-content: center;
     width: 35%;
     padding: 50px 5%;
-    background-color: var(--primary);
+    background-color: var(--blk);
 }
 
 .commitment-text-box .section-heading {
     margin-bottom: 25px;
-    color: #fff;
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 40px;
     font-weight: 400;
@@ -135,8 +135,8 @@
 }
 
 .achievements-section {
-    color: var(--secondary);
-    background-color: var(--primary);
+    color: var(--wht);
+    background-color: var(--blk);
     background-image:
         linear-gradient(rgba(27, 27, 27, 0.7), rgba(9, 8, 8, 0.7)),
         url('../images/achievebg.jpg');
@@ -152,7 +152,7 @@
 
 .achievements-overlay .section-heading {
     margin-bottom: 25px;
-    color: var(--secondary);
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 44px;
     font-weight: 400;
@@ -185,7 +185,7 @@
     margin-bottom: 25px;
     padding-bottom: 12px;
     border-bottom: var(--line);
-    color: #fff;
+    color: var(--wht);
     font-family: var(--bebas);
     font-size: 30px;
     font-weight: 400;
@@ -256,7 +256,7 @@
     .commitment-section {
         display: flex;
         height: 600px;
-        background-color: #000;
+        background-color: var(--blk);
         background-image:
             linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
             url('../images/handswithwine.png');

@@ -6,25 +6,22 @@
     background-size: 55% 100%;
     background-position: right center;
     align-items: center;
-    padding: 20px;
     font-family: var(--work);
 }
 
 .hero-content {
-    color: var(--secondary);
+    color: var(--wht);
     margin-top: 100px;
     margin-left: 40px;
+    padding: 50px 50px;
 }
 
 
 .hero-subtitle {
     font-size: 12px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     margin-bottom: 25px;
-    color: var(--secondary);
     font-weight: 600;
-    justify-content: left;
 }
 
 .hero-title {
@@ -40,7 +37,7 @@
 .hero-desc {
     font-size: 15px;
     line-height: 1.8;
-    color: var(--secondary);
+    color: var(--wht);
     max-width: 450px;
     justify-content: left;
 }
@@ -49,8 +46,8 @@
 .popular-section {
     padding: 100px 8%;
     text-align: center;
-    background-color: #fff;
-    font-family: 'Lora', serif;
+    background-color: var(--wht);
+    font-family: var(--lora);
 }
 
 .section-subtitle {
@@ -69,25 +66,25 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: var(--primary);
+    color: var(--blk);
 }
 
 .section-desc {
-    max-width: 600px;
+    max-width: 600p;
     margin: 0 auto 70px auto;
     font-size: 19px;
     line-height: 1.8;
-    color: var(--primary);
+    color: var(--blk);
 }
 
-.menu-item {
+.menu-container {
     display: flex;
     gap: 40px;
     align-items: center;
     justify-content: center;
 }
 
-.menu-item img {
+.menu-container img {
     object-fit: cover;
     margin-bottom: 25px;
 }
@@ -103,26 +100,24 @@
     aspect-ratio: 4 / 5;
 }
 
-.menu-item h4 {
-    font-size: 16px;
+.menu-container h4 {
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: var(--primary);
+    color: var(--blk);
 }
 
 
 .chef-specials-btn {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--blk);
 }
 
 .btn-outline:hover,
 .chef-specials-btn:hover {
-    background: #111;
-    color: #fff;
-    border-color: #111;
+    background: var(--blk);
+    color: var(--wht);
+    border-color: var(--blk);
 }
 
 .chef-specials-title {
@@ -132,7 +127,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 30px;
-    color: #111;
+    color: var(--blk);
 }
 
 .atmosphere {
@@ -143,7 +138,7 @@
     display: flex;
     align-items: center;
     padding: 0 8%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--work);
 }
 
 .atmosphere-image {
@@ -153,7 +148,7 @@
 .atmosphere-content {
     justify-content: left;
     max-width: 480px;
-    color: #fff;
+    color: var(--wht);
 }
 
 .atmosphere-title {
@@ -168,7 +163,7 @@
     font-family: var(--lora);
     font-size: 16px;
     line-height: 1.8;
-    color: var(--secondary);
+    color: var(--wht);
 }
 
 @media (max-width: 1240px) {
@@ -200,7 +195,7 @@
     .hero-content {
         margin-top: auto;
         padding: 60px 8% 80px 8%;
-        background-color: var(--primary);
+        background-color: var(--blk);
     }
 
     .hero-title {
@@ -219,7 +214,7 @@
         padding: 0 8%;
     }
 
-    .menu-item {
+    .menu-container {
         display: flex;
         flex-direction: column;
         gap: 0;
@@ -246,7 +241,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--bebas);
     }
 
     .chef-specials-title {
@@ -321,7 +316,7 @@
         flex-direction: column;
         height: auto;
         padding: 0;
-        background-color: var(--primary);
+        background-color: var(--blk);
         background-image: none;
     }
 
@@ -335,7 +330,7 @@
     .atmosphere-content {
         padding: 40px 8% 60px 8%;
         text-align: center;
-        background-color: var(--primary);
+        background-color: var(--blk);
     }
 
     .atmosphere-title {
@@ -346,7 +341,7 @@
     .atmosphere-desc {
         font-size: 15px;
         line-height: 1.8;
-        color: var(--secondary);
+        color: var(--wht);
         margin: 0 auto;
     }
 }
